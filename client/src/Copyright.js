@@ -1,14 +1,20 @@
+import { Grid, Box } from '@mui/material';
 import React from 'react'
-import { Navbar, } from 'reactstrap';
 
 
 const Copyright = () => {
     return (
-        <div className='Copyright'>
+        <Grid
+            sx={{ paddingBottom: "15px" }}
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="flex-center"
+            className='Copyright'>
             ENES ULUDOGAN FİTNESS {'Copyright © '}
             {new Date().getFullYear()} All right are Reserved
             {'.'}
-        </div>
+        </Grid>
     )
 }
 export default Copyright
