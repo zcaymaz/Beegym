@@ -1,9 +1,11 @@
-import './styles/App.css';
+import Footer from './Footer';
+import './styles/global.scss';
+import Ulasım from './Ulasım';
 
 function App() {
   return (
     <>
-      
+      <Footer />
     </>
   );
 }
