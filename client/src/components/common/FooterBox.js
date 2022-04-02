@@ -7,7 +7,7 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 const FooterBox = () => {
     return (
 
-        <div>
+        <>
             <Grid
                 sx={{ backgroundColor: "#3F3F3F", color: "#ffff", paddingTop: "20px", paddingBottom: "20px" }}
                 container
@@ -28,7 +28,7 @@ const FooterBox = () => {
             >
                 <Copyright />
             </Grid>
-        </div>
+        </>
     )
 }
 export default FooterBox;
