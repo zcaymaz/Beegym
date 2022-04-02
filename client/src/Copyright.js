@@ -1,6 +1,4 @@
-import { Grid, Box } from '@mui/material';
-import React from 'react'
-
+import { Grid, } from '@mui/material';
 
 const Copyright = () => {
     return (
