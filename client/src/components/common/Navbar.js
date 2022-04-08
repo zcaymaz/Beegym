@@ -1,21 +1,60 @@
-import { Grid, Typography, Stack, } from '@mui/material'
+import { Grid, Typography, Stack, AppBar, Container, Box, Link, Button } from '@mui/material'
 
 const Navbar = () => {
   return (
     <>
-      <Grid
-        container
-        direction="row"
-        justifyContent="flex-end"
-        sx={{ backgroundColor: 'red', width: '100%' }}
-        alignItems="center">
-        <Grid item sm={6}>
-        </Grid>
-        <Grid item sm={6}>
-        JHSDKJAHDKJASDH
-        
-        </Grid>
-      </Grid>
+      <AppBar position="static">
+        <Container className='NavbarContainer' maxWidth="xxl">
+          <Grid container direction="row">
+            <Grid xs="1">
+              <Box sx={{ float: 'right' }}>
+                <img
+                  className='NavbarLogo'
+                  src={require('../../images/Logo-png.png')}
+                />
+              </Box>
+            </Grid>
+            <Grid xs="1" />
+            <Grid container xs="9" paddingTop={3}>
+              <Grid item paddingRight={1} paddingLeft={1}>
+                <Link sx={{ textDecoration: 'none' }} href={'/'}>
+                  <Button className="navbarButton" variant="text">
+                    <Typography className="navbarButton" variant="navbar">Ana Sayfa</Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item paddingRight={1} paddingLeft={1}>
+                <Link sx={{ textDecoration: 'none' }} href={'/'}>
+                  <Button className="navbarButton" variant="text">
+                    <Typography className="navbarButton" variant="navbar">Biyografi</Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item paddingRight={1} paddingLeft={1}>
+                <Link sx={{ textDecoration: 'none' }} href={'/'}>
+                  <Button className="navbarButton" variant="text">
+                    <Typography className="navbarButton" variant="navbar">Online Eğitim</Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item paddingRight={1} paddingLeft={1}>
+                <Link sx={{ textDecoration: 'none' }} href={'/'}>
+                  <Button className="navbarButton" variant="text">
+                    <Typography className="navbarButton" variant="navbar">Blog</Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item paddingRight={1} paddingLeft={1}>
+                <Link sx={{ textDecoration: 'none' }} href={'/'}>
+                  <Button className="navbarButton" variant="text">
+                    <Typography className="navbarButton" variant="navbar">İletişim</Typography>
+                  </Button>
+                </Link>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Container>
+      </AppBar>
     </>
   )
 }

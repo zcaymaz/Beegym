@@ -12,15 +12,9 @@ const home = () => {
         <>
             <Container maxWidth="100%">
                 <Grid container direction={'row'}>
-                    <Grid lg="12" backgroundColor="red" maxWidth='xl' sx={{
-
-                    }}>
+                    <Grid lg="12" backgroundColor="red" maxWidth='xl'>
                         <Box>
-                            <Typography className="deneme">
-                                <Typography>
-                                    adfadf
-                                </Typography>
-                            </Typography>
+                            
                         </Box>
                     </Grid>
                 </Grid>
