@@ -17,7 +17,7 @@ const Navbar = () => {
             <Grid xs="1" />
             <Grid container xs="9" paddingTop={3}>
               <Grid item paddingRight={1} paddingLeft={1}>
-                <Link sx={{ textDecoration: 'none' }} href={'/'}>
+                <Link sx={{ textDecoration: 'none' }} href={'/home'}>
                   <Button className="navbarButton" variant="text">
                     <Typography className="navbarButton" variant="navbar">Ana Sayfa</Typography>
                   </Button>
@@ -45,7 +45,7 @@ const Navbar = () => {
                 </Link>
               </Grid>
               <Grid item paddingRight={1} paddingLeft={1}>
-                <Link sx={{ textDecoration: 'none' }} href={'/'}>
+                <Link sx={{ textDecoration: 'none' }} href={'/conctact'}>
                   <Button className="navbarButton" variant="text">
                     <Typography className="navbarButton" variant="navbar">İletişim</Typography>
                   </Button>

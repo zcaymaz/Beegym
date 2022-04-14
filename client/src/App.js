@@ -1,6 +1,7 @@
 import React, { Component, Suspense } from 'react'
 import {BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/common/Navbar';
+import Footer from './components/common/Footer';
 import './styles/global.scss'
 
 const loading = (
@@ -11,6 +12,7 @@ const loading = (
 
 // Pages
 const Home = React.lazy(() => import('./pages/home'))
+const Conctact = React.lazy(() => import('./pages/conctact'))
 
 class App extends Component {
   render() {
@@ -21,8 +23,10 @@ class App extends Component {
           <Routes>
             {/* <Route exact path="/about" name="About Page" element={<About />} /> */}
             <Route exact path="*" name="Home Page" element={<Home />} />
+            <Route exact path="conctact" name="Home Page" element={<Conctact />} />
           </Routes>
         </Suspense>
+        <Footer />
       </HashRouter>
     )
   }
