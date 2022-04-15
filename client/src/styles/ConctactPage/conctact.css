@@ -1,32 +1,36 @@
 .headContainer {
     max-width: 100%;
-    height: 160px;
+    min-height: 160px;
     text-align: center;
     background-image: url("../../images/Conctact.jpg");
     opacity: 0.8;
     filter: alpha(opacity=40);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 140%;
     box-shadow: 10px 10px 8px #888888;
 }
 .headContainerText {
     padding-top: 20px;
     font-family: Mulish;
     font-size: xxx-large;
-    font-weight: 400;
-    color: rgb(99, 56, 56);
+    font-weight: bolder;
+    color: rgb(83, 79, 79);
     letter-spacing: 0.2px;
 }
-.footerText {   
-    font-family: Mulish !important;
+.conctactHead {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0px 30px 0px;
 }
-.socialLocaition {
-    font-size: 30px;
-    color: red;
+.text {
+    font-family: Mulish;
+    font-size: larger;
+    font-weight: 600;
+    color: #898383;
 }
-.socialLocaitionHead {
-    font-size: 57px;
-}
-.phone {
-    font-size: large;
+.conctactText {
+    font-family: Mulish;
+    font-size: 16.6px;
+    font-weight: 600;
+    color: #635959;
 }
