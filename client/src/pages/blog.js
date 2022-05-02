@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Grid, Box, Card, Divider } from '@mui/material'
+import { Typography, Grid, Box, Card, Divider, CardMedia } from '@mui/material'
 
 
 const Blog = () => {
@@ -22,11 +22,28 @@ const Blog = () => {
                 />
             </Box>
 
-            <Card className='blogCard'>
-                dafkmsdlfkdslnf
-            </Card>
 
-
+            {/* Card */}
+            <Box>
+                <Box sx={{width:'350px'}}>   
+                <Typography className='blogCardHeader'>
+                        YOU MAY BE FORGETTING TO DRINK WATER!
+                    </Typography>               
+                    <CardMedia
+                        className='Cardimage'
+                        component="img"
+                        height="240"
+                        image={require('../images/cardimage1.png')}
+                    />
+                     
+                
+                <Card className='blogCard'>
+                    <Box >
+                   
+                    </Box>
+                </Card>
+                </Box>
+            </Box>
 
         </>
     )
