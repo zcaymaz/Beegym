@@ -13,6 +13,7 @@ const loading = (
 // Pages
 const Home = React.lazy(() => import('./pages/home'))
 const Conctact = React.lazy(() => import('./pages/conctact'))
+const Blog = React.lazy(() => import('./pages/blog'))
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             {/* <Route exact path="/about" name="About Page" element={<About />} /> */}
             <Route exact path="*" name="Home Page" element={<Home />} />
             <Route exact path="conctact" name="Home Page" element={<Conctact />} />
+            <Route exact path="blog" name="Blog Page" element={<Blog />} />
           </Routes>
         </Suspense>
         <Footer />

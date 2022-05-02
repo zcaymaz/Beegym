@@ -20,7 +20,7 @@
 }
 
 .NavbarContainer {
-    background: linear-gradient(90deg, rgba(22,21,0,1) 0%, rgba(7,17,69,1) 60%, rgba(235,184,8,1) 100%);
+    background: linear-gradient(90deg, rgba(22, 21, 0, 1) 0%, rgba(7, 17, 69, 1) 60%, rgba(235, 184, 8, 1) 100%);
 }
 
 .NavbarLogo {
@@ -45,6 +45,37 @@
     text-decoration: none !important;
     color: #67696f !important;
 }
+
 .NavbarDivider {
     width: 70%;
+}
+
+.blogimage {
+    max-height: 240px;
+    width: 100%;
+}
+
+.blogheader {
+    max-height: 240px;
+}
+
+.blogheadertext {
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding-top: 100px;
+    font-family: 'Mulish';
+    font-style: italic;
+    font-weight: 900 !important;
+    font-size: 64px !important;
+    line-height: 80px !important;
+    text-transform: uppercase !important;
+    color: #EABE4C;
+}
+.blogCard {
+    min-height: 420px;
+    width: 300px;
 }
