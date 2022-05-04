@@ -10,15 +10,11 @@ import {
 const home = () => {
     return (
         <>
-            <Container maxWidth="100%">
-                <Grid container direction={'row'}>
-                    <Grid lg="12" backgroundColor="red" maxWidth='xl'>
-                        <Box>
-                            
-                        </Box>
-                    </Grid>
+            <Grid container direction={'row'}>
+                <Grid sx={{height:'42rem'}} xs="12" backgroundColor="red" maxWidth='100%'>
+                    
                 </Grid>
-            </Container>
+            </Grid>
         </>
     );
 }

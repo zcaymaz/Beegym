@@ -1,4 +1,4 @@
-import { Grid, } from '@mui/material'
+import { Grid, IconButton, } from '@mui/material'
 import Copyright from './Copyright'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
@@ -14,7 +14,10 @@ const FooterBox = () => {
                 direction="row"
                 alignItems="flex-center"
             >
-                <Grid item sm={4} xs={12} sx={{ textAlign: "center" }}><InstagramIcon />/IgId</Grid>
+                <Grid item sm={4} xs={12} sx={{ textAlign: "center" }}>
+                    <IconButton target={'_blank'} href={'https://www.instagram.com/enesuludoganfitness'}>
+                    <InstagramIcon sx={{color:'white'}} />
+                    </IconButton></Grid>
                 <Grid item sm={4} xs={12} sx={{ textAlign: "center" }}><EmailIcon />EuFitness@gmail.com</Grid>
                 <Grid item sm={4} xs={12} sx={{ textAlign: "center" }}><PersonAddIcon />Hemen Katıl</Grid>
             </Grid>
