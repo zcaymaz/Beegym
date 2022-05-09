@@ -1,17 +1,20 @@
-import { Grid, } from '@mui/material';
+import { Grid, IconButton } from '@mui/material';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Copyright = () => {
     return (
         <Grid
-            sx={{ paddingBottom: "15px" }}
             container
             direction="row"
             justifyContent="center"
-            alignItems="flex-center"
+            alignItems="center"
             className='Copyright'>
             ENES ULUDOGAN FİTNESS {'Copyright © '}
-            {new Date().getFullYear()} All right are Reserved
+            {new Date().getFullYear()} All Right Are Reserved
             {'.'}
+            <IconButton target={'_blank'} href={'https://www.instagram.com/enesuludoganfitness'}>
+                <InstagramIcon sx={{ color: 'white' }} />
+            </IconButton>
         </Grid>
     )
 }
