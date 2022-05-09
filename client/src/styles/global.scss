@@ -57,6 +57,7 @@
 
 .blogheader {
     max-height: 240px;
+    margin-bottom: 90px;
 }
 
 .blogheadertext {
@@ -77,12 +78,11 @@
 }
 
 .blogCard {
-    min-height: 300px;
-    width: 350px;
+    min-height: 500px;
+    max-width: 350px;
     border-radius: 0px 0px 20px 20px !important;
-    background-color: red !important;
     margin: 0px 30px 30px 30px;
-   
+
 }
 
 // .BlogCardimage {
@@ -92,13 +92,49 @@
 
 .blogCardHeader {
     background: rgba(255, 255, 255, 0.5) !important;
-    backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(10px) !important;
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 20px 20px 0px 0px !important;
     height: 100px;
+    margin-top: -90px;
+
+    z-index: 99;
+}
+
+.Cardimage {
+    // margin: 30px 30px 0px 30px;
+    width: 400px;
+    z-index: 9;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.Cardtext {
+    font-family: 'Mulish' !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+    font-size: 24px !important;
+    line-height: 25px !important;
+    text-transform: uppercase !important;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.Cardtextcontent {
+    font-family: 'Mulish' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    margin-bottom: 10px !important;
+}
+.Cardbutton:hover {
+    background-color: black !important;
+    color: white !important;
     
 }
-.Cardimage {
-    margin: 30px 30px 0px 30px;
-    width: 350px;
+.Cardbutton {
+    color: black !important;
+    border-radius: 15px !important;
+
+    
 }

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Typography, Grid, Box, Card, Divider, CardMedia } from '@mui/material'
+import { Typography, Box, Divider,} from '@mui/material'
+// import Blogcard from '../components/common/Blogcard'
 
 
 const Blog = () => {
@@ -21,30 +22,14 @@ const Blog = () => {
                     src={require('../images/blogPage.jpeg')}
                 />
             </Box>
-
-
             {/* Card */}
-            <Box>
-                <Box sx={{width:'350px'}}>   
-                <Typography className='blogCardHeader'>
-                        YOU MAY BE FORGETTING TO DRINK WATER!
-                    </Typography>               
-                    <CardMedia
-                        className='Cardimage'
-                        component="img"
-                        height="240"
-                        image={require('../images/cardimage1.png')}
-                    />
-                     
-                
-                <Card className='blogCard'>
-                    <Box >
-                   
-                    </Box>
-                </Card>
-                </Box>
-            </Box>
-
+           
+               {/* <div>
+                   <Box>
+                       ref={startu}
+                   </Box>
+               </div>
+           */}
         </>
     )
 }
