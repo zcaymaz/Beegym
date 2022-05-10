@@ -46,7 +46,7 @@ const Navbar = () => {
             </Link>
           </Grid>
           <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/'}>
+            <Link sx={{ textDecoration: 'none' }} href={'/blog'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Blog</Typography>
               </Button>

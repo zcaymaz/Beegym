@@ -20,7 +20,7 @@
 }
 
 .NavbarContainer {
-    background: linear-gradient(90deg, rgba(22,21,0,1) 0%, rgba(7,17,69,1) 60%, rgba(235,184,8,1) 100%);
+    background: linear-gradient(90deg, rgba(22, 21, 0, 1) 0%, rgba(7, 17, 69, 1) 60%, rgba(235, 184, 8, 1) 100%);
 }
 
 .NavbarLogo {
@@ -45,6 +45,93 @@
     text-decoration: none !important;
     color: #67696f !important;
 }
+
 .NavbarDivider {
     width: 70%;
+}
+
+.blogimage {
+    max-height: 270px;
+    width: 100%;
+    background-color: #4B4B4B !important;
+}
+
+.blogheader {
+    max-height: 240px;
+    margin-bottom: 90px;
+}
+
+.blogheadertext {
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding-top: 100px;
+    font-family: 'Mulish';
+    font-style: italic;
+    font-weight: 900 !important;
+    font-size: 64px !important;
+    line-height: 80px !important;
+    text-transform: uppercase !important;
+    color: #EABE4C;
+}
+
+.blogCard {
+    min-height: 500px;
+    max-width: 350px;
+    border-radius: 20px !important;
+    margin: 0px 30px 30px 30px;
+}
+
+.blogCardHeader {
+    background: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 20px 20px 0px 0px !important;
+    height: 100px;
+    margin-top: -90px;
+    z-index: 99;
+}
+
+.Cardimage {
+    width: 400px;
+    z-index: 9;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #4B4B4B !important;
+}
+
+.Cardtext {
+    font-family: 'Mulish' !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+    font-size: 24px !important;
+    line-height: 25px !important;
+    text-transform: uppercase !important;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.Cardtextcontent {
+    font-family: 'Mulish' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    margin-bottom: 10px !important;
+}
+
+.Cardbutton:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.Cardbutton {
+    color: black !important;
+    border-radius: 15px !important;
+    margin-left: 40px !important;
+}
+
+.blogCardData {
+    background-color: #4B4B4B !important;
 }
