@@ -32,7 +32,7 @@ const Navbar = () => {
             </Link>
           </Grid>
           <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/'}>
+            <Link sx={{ textDecoration: 'none' }} href={'/packets'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Paketler</Typography>
               </Button>

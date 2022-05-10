@@ -1,0 +1,71 @@
+.packets-container {
+    background-color: #000000;
+}
+.packetsCard {
+    max-width: 400px;
+    height: 700px;
+    background-color: #1D1D1D;
+    color: #DFDDDC;
+    border-radius: 13px;
+}
+.packetsCard:hover {
+    background-color: rgb(84, 27, 27);
+    transition: 0.5s;
+}
+.packetsCardHeader {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+.packetsCardImg {
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid rgb(84, 27, 27);
+    max-width: 320px;
+    max-height: 300px;
+}
+.packetsCardContent {
+    font-family: Mulish;
+    font-size: 17px;
+    margin-top: 2px;
+    text-align: center;
+}
+.packetsCardName {
+    font-family: Mulish;
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 12px;
+    text-align: center;
+    color: rgb(216, 42, 42);
+}
+.packetsCardInformation {
+    margin-top: 16px;
+    font-family: Mulish;
+    text-align: center;
+    font-size: 16px;
+}
+.packetsCardDivider {
+    background-color: rgb(84, 27, 27);
+    height: 1px;
+}
+.packetsCardButton {
+    margin-top: 40px;
+    width: 200px;
+    background: rgb(7, 72, 34);
+}
+.packetsCardButton:hover {
+    background: #1D1D1D;
+}
+.packetsCardButtonText {
+    color: #DFDDDC;
+}
+.packetsCardPriceBox {
+    margin-top: 40px;
+}
+.packetsCardPrice {
+    font-family: Mulish;
+    font-size: 22px ;
+}
