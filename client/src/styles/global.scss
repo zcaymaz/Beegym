@@ -4,7 +4,6 @@
     font-size: 13px;
     color: #fff;
     padding-top: 15px;
-
 }
 
 .Copybox {
@@ -51,8 +50,9 @@
 }
 
 .blogimage {
-    max-height: 240px;
+    max-height: 270px;
     width: 100%;
+    background-color: #4B4B4B !important;
 }
 
 .blogheader {
@@ -77,35 +77,27 @@
     color: #EABE4C;
 }
 
-.blogCard {
+.blogCard {   
     min-height: 500px;
     max-width: 350px;
-    border-radius: 0px 0px 20px 20px !important;
+    border-radius: 20px  !important;
     margin: 0px 30px 30px 30px;
-
 }
-
-// .BlogCardimage {
-//     height: 230px;
-//     width: 100%;
-// }
 
 .blogCardHeader {
     background: rgba(255, 255, 255, 0.5) !important;
     backdrop-filter: blur(10px) !important;
-    /* Note: backdrop-filter has minimal browser support */
     border-radius: 20px 20px 0px 0px !important;
     height: 100px;
     margin-top: -90px;
-
     z-index: 99;
 }
 
 .Cardimage {
-    // margin: 30px 30px 0px 30px;
     width: 400px;
     z-index: 9;
     border-radius: 10px 10px 0px 0px;
+    background-color: #4B4B4B !important;
 }
 
 .Cardtext {
@@ -115,8 +107,8 @@
     font-size: 24px !important;
     line-height: 25px !important;
     text-transform: uppercase !important;
-    padding-left: 10px;
     padding-top: 8px;
+    text-align: center;
 }
 
 .Cardtextcontent {
@@ -125,16 +117,20 @@
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 25px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 10px !important;  
 }
+
 .Cardbutton:hover {
     background-color: black !important;
     color: white !important;
-    
 }
+
 .Cardbutton {
     color: black !important;
     border-radius: 15px !important;
+    margin-left: 40px !important;
+}
 
-    
+.blogCardData {
+    background-color: #4B4B4B !important;
 }

@@ -1,48 +1,116 @@
-import React from 'react'
-import { Typography, Grid, Box, Card, CardMedia, CardActions, CardContent, Button } from '@mui/material'
+import React, { useState } from 'react'
+import { Typography, Grid, Box, Card, CardMedia, IconButton, Divider, CardActions, Modal, CardContent, Button } from '@mui/material'
+import CloseIcon from '@mui/icons-material/Close'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
+const style = {
+    maxWidth: '640px',
+    minHeight: '523px',
+    bgcolor: 'background.paper',
+
+    borderRadius: '20px',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+};
+const styles = {
+    paddingTop: '8%',
+    overflowX: 'hidden',
+};
 
 
-const blogcard = () => {
+
+const Blogcard = (props) => {
+    const [showModal, setShowModal] = useState(false);
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+    const [selectedValue, setSelectedValue] = React.useState('a');
+    const handleChange = (event) => {
+        setSelectedValue(event.target.value);
+    };
+    const controlProps = (item) => ({
+        checked: selectedValue === item,
+        onChange: handleChange,
+        value: item,
+        name: 'color-radio-button-demo',
+        inputProps: { 'aria-label': item },
+    });
+
     return (
-        <>
-            <Grid>
-                <Card className='blogCard'>
-                    <CardMedia
-                        className='Cardimage'
-                        component="img"
-                        height="240"
-                        image={require('../images/cardimage1.png')}
-                    />
-                    <Box className='blogCardHeader' >
-                        <Typography className='Cardtext'>
-                            YOU MAY BE <br /> FORGETTING TO DRINK <br /> WATER!
-                        </Typography>
-                    </Box>
-                    <CardContent>
-                        <Typography className='Cardtextcontent' >
-                            Su yaşamın vazgeçilmez bir parçası fakat bunun ciddiyetinin farkında mıyız? <br /> <br />  Nefes almaktan sonra en çok ihtiyaç duyduğumuz şey su içmektir...
-                        </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Grid xs={6}>
-                            <Typography sx={{ paddingLeft: '7px' }}>
-                                14.02.2022
+
+        <Grid xs={12} sm={6} md={4} lg={3}
+            className='blogCardData'
+        >
+            <Card className='blogCard'>
+                <CardMedia
+                    className='Cardimage'
+                    component="img"
+                    height="240"
+                    image={props.media}
+                // {require('../images/cardimage1.png')}
+                />
+                <Box className='blogCardHeader' >
+                    <Typography className='Cardtext'>
+                        {props.header}
+                        {/* YOU MAY BE <br /> FORGETTING TO DRINK <br /> WATER! */}
+                    </Typography>
+                </Box>
+                <CardContent sx={{height:'180px'}}>
+                    <Typography className='Cardtextcontent' >
+                        {props.content}
+                        {/* Su yaşamın vazgeçilmez bir parçası fakat bunun ciddiyetinin farkında mıyız? <br /> <br />  Nefes almaktan sonra en çok ihtiyaç duyduğumuz şey su içmektir... */}
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                <Grid container
+                    direction="row"                   
+                    
+                >
+                    
+                        <Grid  xs={12} md={4} 
+                        sx={{textAlign: {xs:'center', xl:'normal'}}}
+                        >
+                            <Typography sx={{ paddingTop:'7px' ,}}>
+                                {props.date}
+                                {/* 14.02.2022 */}
                             </Typography>
                         </Grid>
-                        <Grid container
-                            direction="row"
-                            justifyContent="flex-end"
-                            alignItems="center"
+                        <Grid  xs={12} md={8}
+                          sx={{textAlign: {xs: 'center', xl : 'normal' }}}
                         >
-                            <Button className='Cardbutton'>
-                                DEVAMINI OKU -
+                            <Button className='Cardbutton'
+                                onClick={handleOpen}
+                            >{props.button}
+                            <ArrowForwardIcon />
+                                {/* DEVAMINI OKU - */}
                             </Button>
                         </Grid>
-                    </CardActions>
-                </Card>
-            </Grid>
-        </>
+                        <Modal
+                            hideBackdrop
+                            open={open}
+                            onClose={handleClose}
+                            sx={styles}
+                        >
+                            <center>
+                                <Box sx={{ ...style, }}>
+                                    <Typography className='viewSubmissionchidmodaltitle'>
+                                        {props.modalheader}
+                                        <IconButton onClick={() => handleClose()} sx={{ float: 'right' }}>
+                                            <CloseIcon sx={{ color: '#FAA629' }} fontSize="medium" />
+                                        </IconButton>
+                                    </Typography>
+                                    <Divider sx={{ border: '1px solid #C0C0C0' }} />                               
+                                </Box>
+                            </center>
+                        </Modal>
+                    
+                </Grid>
+                </CardActions>
+            </Card>
+        </Grid>
+
     )
 }
 
-export default blogcard
+export default Blogcard
