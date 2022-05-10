@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardMedia, Divider, Grid, Typography } from '@mui/material'
+import { Box, Button, Card, CardMedia, Grid, Typography } from '@mui/material'
 import React from 'react'
 import "../../../styles/PacketsPage/packets.css"
 
