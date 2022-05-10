@@ -11,10 +11,12 @@ const Navbar = () => {
       <Grid sx={{ display: { xs: 'none', sm: 'none', md: 'flex', lg: 'flex' } }}
         container direction={'row'} className="NavbarContainer">
         <Grid xs="1.5" sx={{ paddingLeft: { sm: '0', md: '2em' } }}>
-          <img
-            className='NavbarLogo'
-            src={require('../../images/Logo-png.png')}
-          />
+          <Link href="/">
+            <img
+              className='NavbarLogo'
+              src={require('../../images/Logo-png.png')}
+            />
+          </Link>
         </Grid>
         <Grid alignItems={'center'} justifyContent={'flex-end'} container xs="10.5">                 {/* 10.8 */}
           <Grid item paddingRight={0.7}>
