@@ -11,14 +11,6 @@
     background-color: #4B4B4B;
 }
 
-.deneme {
-    background-image: url(../images/home.png);
-    background-repeat: no-repeat;
-    max-width: 100%;
-    max-height: 100%;
-    height: 600px;
-}
-
 .NavbarContainer {
     background: linear-gradient(90deg, rgba(22, 21, 0, 1) 0%, rgba(7, 17, 69, 1) 60%, rgba(235, 184, 8, 1) 100%);
 }
@@ -48,34 +40,6 @@
 
 .NavbarDivider {
     width: 70%;
-}
-
-.blogimage {
-    max-height: 270px;
-    width: 100%;
-    background-color: #4B4B4B !important;
-}
-
-.blogheader {
-    max-height: 240px;
-    margin-bottom: 90px;
-}
-
-.blogheadertext {
-    position: absolute;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    padding-top: 100px;
-    font-family: 'Mulish';
-    font-style: italic;
-    font-weight: 900 !important;
-    font-size: 64px !important;
-    line-height: 80px !important;
-    text-transform: uppercase !important;
-    color: #EABE4C;
 }
 
 .blogCard {
@@ -132,6 +96,5 @@
     margin-left: 40px !important;
 }
 
-.blogCardData {
-    background-color: #4B4B4B !important;
-}
+
+
