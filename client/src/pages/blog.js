@@ -7,17 +7,21 @@ import {cardimage1,
         cardimage4,
         cardimage5,
          } from '../images'
-import modal from '../components/common/Modal'
+
 
 
 const blogCardData = [
     {
-        header: " YOU MAY BE FORGETTING  TO DRINK  WATER! ",
-        content: "Su yaşamın vazgeçilmez bir parçası fakat bunun ciddiyetinin farkında mıyız?   Nefes almaktan sonra en çok ihtiyaç duyduğumuz şey su içmektir...",
+        header: " Kilo ve Yağ Kaybı",
+        content: "Yağ kaybı, yağdan kilo kaybı anlamına gelir. Kilo vermekten daha spesifik ve sağlıklı bir hedeftir.",
         media: cardimage1,
         date: " 14.02.2022 ",
         button: "DEVAMINI OKU",
-        modalheader: "YOU MAY BE FORGETTING  TO DRINK  WATER!",
+        modalheader: "Kilo Vermek ve Yağ Yakmak Arasındaki Fark Nedir? Kilo ve Yağ Kaybı",
+        modalcontentheader: "Kilo Kaybı Nedir?",
+        modalcontenttext: "Kilo kaybı, genel vücut ağırlığınızdaki kas, su ve yağ kayıplarından kaynaklanan azalmayı ifade eder. Bununla birlikte, yağdan mı yoksa kastan mı kilo verdiğinizi bilmek zor olabilir.",
+        modalcontentheader2: "Yağdan Kilo Verdiğimizi Nasıl Anlarız?",
+        modalcontenttext2 : "Bir tartı kullanarak kilo verme durumunuzu takip etmek yaygın bir uygulamadır. Tartı kullanımı kilonuzu öğrenmek için yardımcı olabilirken çoğu tartı, yağ kaybı ile kas kaybı arasında ayrım yapmaz. Bu nedenle, yalnızca tartı ile kilonuzu takip etmek, yağ mı yoksa kas mı kaybettiğinizi ve hangi miktarlarda kaybettiğinizi belirlemenin güvenilir bir yolu değildir. Vücut yağı da ölçen tartı, sahip olduğunuz yağ ve kas yüzdesini ölçerek vücut kompozisyonunuzun daha doğru bir resmini sağlayabilir. Vücut yağ yüzdenizi tahmin etmek için deri kıvrım kaliperleri de kullanabilirsiniz, ancak bu, doğruluğu sağlamak için pratik gerektirir."
     },
     {
         header: " GÜZEL BİR UYKU UYUYAMIYOR MUSUNUZ ? ",
@@ -68,17 +72,13 @@ const blog = () => {
                 }}
             />
             <Box className='blogheader'>
-                {/* <center>
-                    <Typography className='blogheadertext'>
-                        Blog
-                    </Typography>
-                </center> */}
                 <img
                     className='blogimage'
                     src={require('../images/blogPage.png')}
                 />
             </Box>
             {/* Card */}
+            <center>
             <Grid container
                 direction='row'
                 className='blogCardData'
@@ -93,10 +93,15 @@ const blog = () => {
                             date={card.date}
                             button={card.button}
                             modalheader={card.modalheader}
+                            modalcontentheader={card.modalcontentheader}
+                            modalcontenttext={card. modalcontenttext}
+                            modalcontentheader2={card.modalcontentheader2}
+                            modalcontenttext2={card.modalcontenttext2}
                         />
                     )
                 })}
             </Grid>
+            </center>
         </Box>
     )
 }

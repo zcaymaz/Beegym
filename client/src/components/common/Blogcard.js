@@ -7,7 +7,6 @@ const style = {
     maxWidth: '640px',
     minHeight: '523px',
     bgcolor: 'background.paper',
-
     borderRadius: '20px',
     border: '2px solid #000',
     boxShadow: 24,
@@ -56,56 +55,67 @@ const Blogcard = (props) => {
                         {/* YOU MAY BE <br /> FORGETTING TO DRINK <br /> WATER! */}
                     </Typography>
                 </Box>
-                <CardContent sx={{height:'180px'}}>
+                <CardContent sx={{ height: '180px' }}>
                     <Typography className='Cardtextcontent' >
                         {props.content}
                         {/* Su yaşamın vazgeçilmez bir parçası fakat bunun ciddiyetinin farkında mıyız? <br /> <br />  Nefes almaktan sonra en çok ihtiyaç duyduğumuz şey su içmektir... */}
                     </Typography>
                 </CardContent>
                 <CardActions>
-                <Grid container
-                    direction="row"                   
-                    
-                >
-                    
-                        <Grid  xs={12} md={4} 
-                        sx={{textAlign: {xs:'center', xl:'normal'}}}
+                    <Grid container
+                        direction="row"
+
+                    >
+
+                        <Grid xs={12} md={4}
+                            sx={{ textAlign: { xs: 'center', xl: 'normal' } }}
                         >
-                            <Typography sx={{ paddingTop:'7px' ,}}>
+                            <Typography sx={{ paddingTop: '7px', }}>
                                 {props.date}
                                 {/* 14.02.2022 */}
                             </Typography>
                         </Grid>
-                        <Grid  xs={12} md={8}
-                          sx={{textAlign: {xs: 'center', xl : 'normal' }}}
+                        <Grid xs={12} md={8}
+                            sx={{ textAlign: { xs: 'center', xl: 'normal' } }}
                         >
                             <Button className='Cardbutton'
                                 onClick={handleOpen}
                             >{props.button}
-                            <ArrowForwardIcon />
-                                {/* DEVAMINI OKU - */}
+                                <ArrowForwardIcon />
                             </Button>
                         </Grid>
+                        {/* Modal */}
                         <Modal
-                            hideBackdrop
                             open={open}
                             onClose={handleClose}
                             sx={styles}
                         >
                             <center>
                                 <Box sx={{ ...style, }}>
-                                    <Typography className='viewSubmissionchidmodaltitle'>
+                                    <IconButton onClick={() => handleClose()} sx={{ float: 'right' }}>
+                                        <CloseIcon sx={{ color: '#FAA629' }} fontSize="medium" />
+                                    </IconButton>
+                                    <Typography variant='h5' className='viewSubmissionchidmodaltitle'>
                                         {props.modalheader}
-                                        <IconButton onClick={() => handleClose()} sx={{ float: 'right' }}>
-                                            <CloseIcon sx={{ color: '#FAA629' }} fontSize="medium" />
-                                        </IconButton>
                                     </Typography>
-                                    <Divider sx={{ border: '1px solid #C0C0C0' }} />                               
+                                    <Divider sx={{ border: '1px solid #C0C0C0', marginTop: '10px' }} />
+                                    <Typography variant='h6'>
+                                        {props.modalcontentheader}
+                                    </Typography>
+                                    <Typography>
+                                        {props.modalcontenttext}
+                                    </Typography>
+                                    <Divider sx={{ border: '1px solid #C0C0C0', }} />
+                                    <Typography variant='h6'>
+                                        {props.modalcontentheader2}
+                                    </Typography>
+                                    <Typography>
+                                        {props.modalcontenttext2}
+                                    </Typography>
                                 </Box>
                             </center>
                         </Modal>
-                    
-                </Grid>
+                    </Grid>
                 </CardActions>
             </Card>
         </Grid>
