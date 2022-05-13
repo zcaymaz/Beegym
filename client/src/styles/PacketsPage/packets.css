@@ -1,6 +1,16 @@
 .packets-container {
     background-color: #000000;
 }
+.packetsNav {
+    background-image: url(../../images/packetsnav.jpg);
+}
+.packetsNavText {
+    font-family: Mulish;
+    color: #EABE4C;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}
 .packetsCard {
     max-width: 400px;
     height: 700px;
@@ -23,7 +33,6 @@
 .packetsCardImg {
     margin-top: 20px;
     border-radius: 8px;
-    border: 2px solid rgb(84, 27, 27);
     max-width: 320px;
     max-height: 300px;
 }
@@ -45,7 +54,6 @@
     margin-top: 16px;
     font-family: Mulish;
     text-align: center;
-    font-size: 16px;
 }
 .packetsCardDivider {
     background-color: rgb(84, 27, 27);
@@ -62,10 +70,20 @@
 .packetsCardButtonText {
     color: #DFDDDC;
 }
-.packetsCardPriceBox {
-    margin-top: 40px;
+.packetsFooter {
+    text-align: center;
+    background-color: #1D1D1D;
 }
-.packetsCardPrice {
+.packetsFooterText {
     font-family: Mulish;
-    font-size: 22px ;
+    font-size: 20px;
+    color: #DFDDDC;
+    margin-top: 10px;
+}
+.packetsFooterText2 {
+    margin-top: 20px;
+    color: #929292;
+}
+.packetsFooterText3 {
+    color: #929292;
 }

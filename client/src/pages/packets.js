@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid } from '@mui/material'
+import { Container, Grid, Box, Typography } from '@mui/material'
 import "../styles/PacketsPage/packets.css"
 import PacketsCard from "../components/common/packets/packetsCard"
 import antreman from "../images/antreman.jpg"
@@ -9,14 +9,19 @@ import SuleCetin from "../images/SuleCetin.png"
 const Packets = () => {
     return (
         <>
-            <Container maxWidth="100%" className='packets-container'>
+            <Box sx={{ height: { xs: '100px', md: '150px' } }} className='packetsNav'>
+                <Typography className='packetsNavText' sx={{ lineHeight: { xs: '100px', md: '150px' }, fontSize: { xs: '40px', md: '50px' } }}>
+                    PAKETLER
+                </Typography>
+            </Box>
+            <Container maxWidth="110%" className='packets-container'>
                 <Container maxWidth="xl" >
                     <br />
                     <Grid container spacing={3} direction="row" justifyContent="center" alignItems="center">
                         <Grid item md={6} xl={3.8}>
                             <center>
                                 <PacketsCard
-                                    header="Antreman Planlaması"
+                                    header="Paket 1"
                                     image={beslenme}
                                     duration="4 Haftalık"
                                     t1="Antreman Planlaması"
@@ -28,7 +33,7 @@ const Packets = () => {
                         <Grid item md={6} xl={3.8}>
                             <center>
                                 <PacketsCard
-                                    header="Antreman Programı"
+                                    header="Paket 2"
                                     image={antreman}
                                     duration="4 Haftalık"
                                     t1="Antreman Planlaması"
@@ -44,7 +49,7 @@ const Packets = () => {
                         <Grid item md={6} xl={3.8}>
                             <center>
                                 <PacketsCard
-                                    header="Antreman Programı"
+                                    header="Paket 3"
                                     image={antreman}
                                     duration="12 Haftalık"
                                     t1="Antreman Planlaması"
@@ -60,7 +65,7 @@ const Packets = () => {
                         <Grid item md={6} xl={3.8}>
                             <center>
                                 <PacketsCard
-                                    header="Antreman Programı"
+                                    header="Paket 4"
                                     image={antreman}
                                     duration="24 Haftalık"
                                     t1="Antreman Planlaması"
@@ -76,7 +81,7 @@ const Packets = () => {
                         <Grid item md={6} xl={3.8}>
                             <center>
                                 <PacketsCard
-                                    header="Diyetisyen Paketi"
+                                    header="Paket 5"
                                     image={SuleCetin}
                                     name="Dyt.Şule ÇETİN"
                                     duration="4 Haftalık"
@@ -90,6 +95,26 @@ const Packets = () => {
                     </Grid>
                     <br />
                 </Container>
+                <Box className='packetsFooter'>
+                    <Typography className='packetsFooterText'>
+                        Tüm Online Eğitim Paketlerimiz Kişiye Özel Hazırlanmaktadır.
+                    </Typography>
+                </Box>
+                <Box className='packetsFooter'>
+                    <Typography className='packetsFooterText2'>
+                        Havale EFT ile ödeme yapmak isterseniz aşağıda bulunan IBAN numarasından ödeme yapabilirsiniz.
+                    </Typography>
+                    <Typography className='packetsFooterText3'>
+                        Ad Soyad: Enes Uludoğan
+                    </Typography>
+                    <Typography className='packetsFooterText3'>
+                        Çalıştığımız Banka : Ziraat Bankası
+                    </Typography>
+                    <Typography className='packetsFooterText3'>
+                        IBAN : TR76 0009 9012 3456 7800 1000 01
+                    </Typography>
+                </Box>
+                <br />
             </Container>
         </>
     )

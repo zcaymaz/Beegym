@@ -49,21 +49,16 @@ const packetsCard = props => {
                       
                     </Grid>
                     <Grid item xs={10}>
-                        <Typography className='packetsCardInformation'>
+                    <Box>
+                        <Typography sx={{ fontSize: { xs: '14px' , md: '16px'}}} className='packetsCardInformation'>
                             {props.information}
                         </Typography>
+                    </Box>
                     </Grid>
-                    <Grid item xs={3}>
-                        <Box className='packetsCardPriceBox'>
-                            <Typography className='packetsCardPrice'>
-                                {props.price}
-                            </Typography>
-                        </Box>
-                    </Grid>
-                    <Grid item>
+                    <Grid item xs={12}>
                         <Button className='packetsCardButton'>
                             <Typography className='packetsCardButtonText'>
-                                Satın Al
+                                {props.price}
                             </Typography>
                         </Button>
                     </Grid>
