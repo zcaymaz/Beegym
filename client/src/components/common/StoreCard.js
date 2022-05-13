@@ -1,12 +1,12 @@
 import React from 'react'
-import { Grid, Typography, Button, CardActionArea, CardActions, Card, CardContent, CardMedia } from '@mui/material';
+import { Grid, Typography, Button, CardActionArea, Card, CardContent, CardMedia } from '@mui/material';
 
 
 const StoreCard = (props) => {
     return (
         <>
             <Card className="store-card">
-                <CardActionArea>
+                <CardActionArea href="cardata">
                     <CardMedia
                         component="img"
                         className="store-card-media1"
@@ -14,7 +14,7 @@ const StoreCard = (props) => {
                     />
                     <CardContent>
                         <Grid container sx={{ margin: 'auto', }}>
-                            <Grid item xs={12}>
+                            <Grid item xs={12} className="store-card-name-area-grid">
                                 <Typography className="store-card-name" >
                                     {props.name}
                                 </Typography>
@@ -25,7 +25,7 @@ const StoreCard = (props) => {
                                 </Typography>
                             </Grid>
                             <Grid item xs={5}>
-                                <Button color="success">
+                                <Button color="success" href='purchase'>
                                     <Typography className="store-card-price">
                                         {props.price}₺
                                     </Typography>
