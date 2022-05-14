@@ -9,6 +9,7 @@ import home from './home.png'
 import images from './images.png'
 import Logojpeg from './Logo-jpg.jpg'
 import Logopng from './Logo-png.png'
+import weare from './weare.png'
 
 
 export {
@@ -23,4 +24,5 @@ export {
     images,
     Logojpeg,
     Logopng,
+    weare
 }

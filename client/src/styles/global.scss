@@ -135,3 +135,20 @@
 .blogCardData {
     background-color: #4B4B4B !important;
 }
+
+.WhatsappIcon {
+    height: 60px;
+    width:60px !important; 
+    color:green; 
+    bottom: 40px;
+    z-index:100;
+    position: fixed;
+    right: 30px;
+}
+
+@media (max-width:600px) {
+    .WhatsappIcon{
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
