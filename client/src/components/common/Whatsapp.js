@@ -5,7 +5,7 @@ import {   Link, CardMedia } from '@mui/material'
 const Whatsapp = () => {
     return (
         <>
-            <Link href="https://api.whatsapp.com/send?phone=905339170698">
+            <Link target="_blank" href="https://api.whatsapp.com/send?phone=905339170698">
             <CardMedia
             component="img"
             image={require('../../images/whatsapp.png')}
