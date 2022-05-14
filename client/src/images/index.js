@@ -9,6 +9,10 @@ import home from './home.png'
 import images from './images.png'
 import Logojpeg from './Logo-jpg.jpg'
 import Logopng from './Logo-png.png'
+import vitamin from './vitamin.jpg'
+import protein from './protein.jpeg'
+import bazal from './bazal.jpg'
+
 
 
 export {
@@ -21,6 +25,9 @@ export {
     Conctact,
     home,
     images,
+    protein,
     Logojpeg,
     Logopng,
+    vitamin,
+    bazal,
 }

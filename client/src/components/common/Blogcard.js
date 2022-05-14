@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Grid, Box, Fade, Card, CardMedia,IconButton, Divider, CardActions, Modal, CardContent, Button } from '@mui/material'
+import { Typography, Grid, Box, Fade, Card, CardMedia, IconButton, Divider, CardActions, Modal, CardContent, Button } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
@@ -31,7 +31,7 @@ const Blogcard = (props) => {
                 <CardMedia
                     className='Cardimage'
                     component="img"
-                    height="260"
+                    height="240"
                     image={props.media}
                 />
                 <Box className='blogCardHeader' >
@@ -69,60 +69,78 @@ const Blogcard = (props) => {
                             open={open}
                             onClose={handleClose}
                             sx={styles}
-                            className='blogmodal'                      
+                            className='blogmodal'
                         >
                             <center>
-                            <Fade in={open}>
-                                <Box sx={{ ...style, }}>
-                                    <IconButton onClick={() => handleClose()} sx={{ float: 'right' }}>
-                                        <CloseIcon sx={{ color: '#FFD358' }} fontSize="medium" />
-                                    </IconButton>
-                                    <Typography variant='h5'>
-                                        {props.modalheader}
-                                    </Typography>
-                                    <Divider sx={{ border: '1px solid #C0C0C0', marginTop: '10px' }} />
-                                    <Typography variant='h6' >
-                                        {props.modalcontentheader}
-                                    </Typography>
-                                    <Typography >
-                                        {props.modalcontenttext}
-                                    </Typography>
-                                    <Divider sx={{ border: '1px solid #C0C0C0', }} />
-                                    <Typography variant='h6'>
-                                        {props.modalcontentheader2}
-                                    </Typography>
-                                    <Typography>
-                                        {props.modalcontenttext2}
-                                    </Typography>
-                                    <Divider sx={{ border: '1px solid #C0C0C0', }} />
-                                    <Typography variant='h6'>
-                                        {props.modalcontentheader3}
-                                    </Typography>
-                                    <Typography>
-                                        {props.modalcontenttext3}
-                                        <Divider sx={{ border: '1px solid #C0C0C0', }} />
-                                    </Typography>
-                                    <Typography variant='h6'>
-                                        {props.modalcontentheader4}
-                                    </Typography>
-                                    <Typography>
-                                        {props.modalcontenttext4}
-                                        <Divider sx={{ border: '1px solid #C0C0C0', }} />
-                                    </Typography>
-                                    <Typography variant='h6'>
-                                        {props.modalcontentheader5}
-                                    </Typography>
-                                    <Typography>
-                                        {props.modalcontenttext5}
-                                        <Divider sx={{ border: '1px solid #C0C0C0', }} />
-                                    </Typography>
-                                    <Typography variant='h6'>
-                                        {props.modalcontentheader6}
-                                    </Typography>
-                                    <Typography>
-                                        {props.modalcontenttext6}
-                                    </Typography>
-                                </Box>
+                                <Fade in={open}>
+                                    <Box sx={{ ...style, }}>
+                                        <IconButton onClick={() => handleClose()} sx={{ float: 'right' }}>
+                                            <CloseIcon sx={{ color: '#FFD358' }} fontSize="medium" />
+                                        </IconButton>
+                                        <Typography variant='h5'>
+                                            {props.modalheader}
+                                        </Typography>
+                                        {props.divider1 ?
+                                            <Divider sx={{ border: '1px solid #FFD358', marginTop: '10px' }} />
+                                            : null
+                                        }
+                                        <Typography variant='h6' >
+                                            {props.modalcontentheader}
+                                        </Typography>
+                                        <Typography >
+                                            {props.modalcontenttext}
+                                        </Typography>
+                                        {props.divider2 ?
+                                            <Divider sx={{ border: '1px solid #FFD358', marginTop: '10px' }} />
+                                            : null
+                                        }
+                                        <Typography variant='h6'>
+                                            {props.modalcontentheader2}
+                                        </Typography>
+                                        <Typography>
+                                            {props.modalcontenttext2}
+                                        </Typography>
+                                        {props.divider3 ?
+                                            <Divider sx={{ border: '1px solid #FFD358', marginTop: '10px' }} />
+                                            : null
+                                        }
+                                        <Typography variant='h6'>
+                                            {props.modalcontentheader3}
+                                        </Typography>
+                                        <Typography>
+                                            {props.modalcontenttext3}
+                                            {props.divider4 ?
+                                                <Divider sx={{ border: '1px solid #FFD358', marginTop: '10px' }} />
+                                                : null
+                                            }
+                                        </Typography>
+                                        <Typography variant='h6'>
+                                            {props.modalcontentheader4}
+                                        </Typography>
+                                        <Typography>
+                                            {props.modalcontenttext4}
+                                            {props.divider5 ?
+                                                <Divider sx={{ border: '1px solid #FFD358', marginTop: '10px' }} />
+                                                : null
+                                            }
+                                        </Typography>
+                                        <Typography variant='h6'>
+                                            {props.modalcontentheader5}
+                                        </Typography>
+                                        <Typography>
+                                            {props.modalcontenttext5}
+                                            {props.divider6 ?
+                                                <Divider sx={{ border: '1px solid #FFD358', marginTop: '10px' }} />
+                                                : null
+                                            }
+                                        </Typography>
+                                        <Typography variant='h6'>
+                                            {props.modalcontentheader6}
+                                        </Typography>
+                                        <Typography>
+                                            {props.modalcontenttext6}
+                                        </Typography>
+                                    </Box>
                                 </Fade>
                             </center>
                         </Modal>
