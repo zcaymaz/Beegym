@@ -8,8 +8,8 @@ const blog = () => {
         <Box sx={{bgcolor:'#4B4B4B'}}>
             <CardMedia
                 component="img"
-                height="260"
-                sx={{marginBottom: '20px'}}
+                height="200"
+                sx={{marginBottom: '15px'}}
                 image={require('../images/blogPage.png')}
             />
             {/* Card */}

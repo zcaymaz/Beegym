@@ -1,16 +1,16 @@
 import React from 'react'
-import { Typography, Grid, Box, Fade, Card, CardMedia, IconButton, Divider, CardActions, Modal, CardContent, Button } from '@mui/material'
+import { Typography, Grid, Box, Card, CardMedia, IconButton, Divider, CardActions, Modal, CardContent, Button } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const style = {
     maxWidth: '660px',
-    minHeight: '523px',
+    minHeight: '583px',
     bgcolor: 'background.paper',
     borderRadius: '20px',
     border: '2px solid #000',
     boxShadow: 24,
-    p: 4,
+    p: 2,
 };
 const styles = {
     paddingTop: '8%',
@@ -71,13 +71,16 @@ const Blogcard = (props) => {
                             sx={styles}
                             className='blogmodal'
                         >
-                            <center>
-                                <Fade in={open}>
-                                    <Box sx={{ ...style, }}>
-                                        <IconButton onClick={() => handleClose()} sx={{ float: 'right' }}>
-                                            <CloseIcon sx={{ color: '#FFD358' }} fontSize="medium" />
-                                        </IconButton>
-                                        <Typography variant='h5'>
+
+
+                            <Grid >
+                                
+                                <center>
+                                    <Box sx={{ ...style, }} >
+                                    <IconButton onClick={() => handleClose()} sx={{ float:'right'}}>
+                                    <CloseIcon sx={{ color: '#FFD358' }} fontSize="medium" />
+                                </IconButton>
+                                        <Typography variant='h5' sx={{marginTop:'30px'}}>
                                             {props.modalheader}
                                         </Typography>
                                         {props.divider1 ?
@@ -140,9 +143,12 @@ const Blogcard = (props) => {
                                         <Typography>
                                             {props.modalcontenttext6}
                                         </Typography>
+
                                     </Box>
-                                </Fade>
-                            </center>
+                                </center>
+                            </Grid>
+
+
                         </Modal>
                     </Grid>
                 </CardActions>
