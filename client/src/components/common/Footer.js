@@ -8,7 +8,7 @@ export const Footer = () => {
         <>
             <Grid container spacing={1} direction="row" justifyContent="center" alignItems="center" className='Footer'>
                 <Grid item xs={12}>
-                    <Typography sx={{ fontSize: '20px' }}>
+                    <Typography sx={{ fontSize: '16px' }}>
                         <i>ENES ULUDOGAN FİTNESS</i>
                     </Typography>
                 </Grid>
@@ -16,15 +16,15 @@ export const Footer = () => {
                     <IconButton target={'_blank'} href={'https://www.instagram.com/enesuludoganfitness'}>
                         <InstagramIcon fontSize='large' sx={{ color: 'white' }} />
                     </IconButton>
-                    <IconButton target={'_blank'} href={'https://www.instagram.com/enesuludoganfitness'}>
+                    <IconButton target={'_blank'} href={'https://api.whatsapp.com/send?phone=905339170698'}>
                         <WhatsAppIcon fontSize='large' sx={{ color: 'white' }} />
                     </IconButton>
-                    <IconButton className='aciklama' href="#" data-title="enesuludoganfitness@gmail.com"  sx={{ color: 'white' }}>
+                    <IconButton className='aciklama' href="#" data-title="enesuludoganfitness@gmail.com" sx={{ color: 'white' }}>
                         <EmailIcon fontSize='large' sx={{ color: 'white' }} />
                     </IconButton>
                 </Stack>
                 <Grid item xs={12}>
-                    <Typography>
+                    <Typography sx={{ fontSize: '11px' }}>
                         {'Copyright © '}
                         {new Date().getFullYear()} All Right Are Reserved{'.'}
                     </Typography>
