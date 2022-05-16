@@ -12,9 +12,8 @@ import Logopng from './Logo-png.png'
 import vitamin from './vitamin.jpg'
 import protein from './protein.jpeg'
 import bazal from './bazal.jpg'
-
 import weare from './weare.png'
-
+import Sliderimage1 from './slider1-1.png'
 
 export {
     blogPage,
@@ -31,5 +30,6 @@ export {
     Logopng,
     vitamin,
     bazal,
-    weare
+    weare,
+    Sliderimage1
 }
