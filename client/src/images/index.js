@@ -13,6 +13,7 @@ import vitamin from './vitamin.jpg'
 import protein from './protein.jpeg'
 import bazal from './bazal.jpg'
 
+import weare from './weare.png'
 
 
 export {
@@ -30,4 +31,5 @@ export {
     Logopng,
     vitamin,
     bazal,
+    weare
 }

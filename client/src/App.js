@@ -3,6 +3,7 @@ import {BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import './styles/global.scss'
+import Whatsapp from './components/common/Whatsapp';
 
 const loading = (
   <div className="pt-3 text-center">
@@ -23,6 +24,7 @@ class App extends Component {
       <HashRouter>
         <Suspense fallback={loading}>
         <Navbar/>
+        <Whatsapp />
           <Routes>
             {/* <Route exact path="/about" name="About Page" element={<About />} /> */}
             <Route exact path="*" name="Home Page" element={<Home />} />
@@ -33,6 +35,7 @@ class App extends Component {
           </Routes>
         </Suspense>
         <Footer />
+        
       </HashRouter>
     )
   }
