@@ -45,9 +45,7 @@ const Blogcard = (props) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Grid container
-                        direction="row"
-                    >
+                    <Grid container direction="row">
                         <Grid xs={12} md={4}
                             sx={{ textAlign: { xs: 'center', xl: 'normal' } }}
                         >
@@ -74,13 +72,13 @@ const Blogcard = (props) => {
 
 
                             <Grid >
-                                
+
                                 <center>
                                     <Box sx={{ ...style, }} >
-                                    <IconButton onClick={() => handleClose()} sx={{ float:'right'}}>
-                                    <CloseIcon sx={{ color: '#FFD358' }} fontSize="medium" />
-                                </IconButton>
-                                        <Typography variant='h5' sx={{marginTop:'30px'}}>
+                                        <IconButton onClick={() => handleClose()} sx={{ float: 'right' }}>
+                                            <CloseIcon sx={{ color: '#FFD358' }} fontSize="medium" />
+                                        </IconButton>
+                                        <Typography variant='h5' sx={{ marginTop: '30px' }}>
                                             {props.modalheader}
                                         </Typography>
                                         {props.divider1 ?

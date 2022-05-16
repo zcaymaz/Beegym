@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Typography, Grid, Link, Button, IconButton, Menu, MenuItem, Divider } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
+import Logo from '../../images/Logo-png.png';
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
@@ -12,10 +13,7 @@ const Navbar = () => {
         container direction={'row'} className="NavbarContainer">
         <Grid xs="1.5" sx={{ paddingLeft: { sm: '0', md: '2em' } }}>
           <Link href="/">
-            <img
-              className='NavbarLogo'
-              src={require('../../images/Logo-png.png')}
-            />
+            <img className="NavbarLogo" src={Logo} alt='logo' />
           </Link>
         </Grid>
         <Grid alignItems={'center'} justifyContent={'flex-end'} container xs="10.5">                 {/* 10.8 */}
@@ -68,10 +66,7 @@ const Navbar = () => {
       <Grid sx={{ display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none' } }}
         container direction={'row'} className="NavbarContainer">
         <Grid xs="1.5" sx={{ paddingLeft: { xs: '1em', sm: '2em' } }}>
-          <img
-            className='NavbarLogo'
-            src={require('../../images/Logo-png.png')}
-          />
+          <img className="NavbarLogo" src={Logo} alt='logo' />
         </Grid>
         <Grid container xs="10.5" alignItems={'center'}>
           <Grid item xs="12">

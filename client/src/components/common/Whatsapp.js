@@ -1,5 +1,5 @@
 import React from 'react'
-import {   Link, CardMedia } from '@mui/material'
+import { Link, CardMedia } from '@mui/material'
 
 
 const Whatsapp = () => {
