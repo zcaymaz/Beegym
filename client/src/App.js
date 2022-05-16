@@ -17,6 +17,7 @@ const Conctact = React.lazy(() => import('./pages/conctact'))
 const Blog = React.lazy(() => import('./pages/blog'))
 
 const Team = React.lazy(() => import('./pages/team'))
+const Packets = React.lazy(() => import('./pages/packets'))
 
 class App extends Component {
   render() {
@@ -29,9 +30,9 @@ class App extends Component {
             {/* <Route exact path="/about" name="About Page" element={<About />} /> */}
             <Route exact path="*" name="Home Page" element={<Home />} />
             <Route exact path="conctact" name="Home Page" element={<Conctact />} />
-            
             <Route exact path="blog" name="Blog Page" element={<Blog />} />
             <Route exact path="team" name="Team Page" element={<Team />} />
+            <Route exact path="packets" name="Paketler" element={<Packets />} />
           </Routes>
         </Suspense>
         <Footer />
