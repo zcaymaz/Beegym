@@ -9,7 +9,7 @@ import home from './home.png'
 import images from './images.png'
 import Logojpeg from './Logo-jpg.jpg'
 import Logopng from './Logo-png.png'
-
+import Sliderimage1 from './slider1-1.png'
 
 export {
     blogPage,
@@ -23,4 +23,5 @@ export {
     images,
     Logojpeg,
     Logopng,
+    Sliderimage1,
 }
