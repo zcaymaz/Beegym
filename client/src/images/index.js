@@ -14,6 +14,9 @@ import protein from './protein.jpeg'
 import bazal from './bazal.jpg'
 import weare from './weare.png'
 import Sliderimage1 from './slider1-1.png'
+import antrenman from './antreman.jpg'
+import beslenme from './beslenme.jpg'
+import SuleCetin from './SuleCetin.png'
 
 export {
     blogPage,
@@ -31,5 +34,8 @@ export {
     vitamin,
     bazal,
     weare,
-    Sliderimage1
+    Sliderimage1,
+    antrenman,
+    beslenme,
+    SuleCetin
 }

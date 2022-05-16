@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
           </Grid>
           <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/'}>
+            <Link sx={{ textDecoration: 'none' }} href={'/mutation'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Değişimler</Typography>
               </Button>
@@ -110,7 +110,7 @@ const Navbar = () => {
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
-                <Link className="menuItemLink" href={'/'}>
+                <Link className="menuItemLink" href={'/mutation'}>
                   <Typography className="menuItemText">Değişimler</Typography>
                 </Link>
               </MenuItem>

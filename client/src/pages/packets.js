@@ -2,9 +2,11 @@ import React from 'react'
 import { Container, Grid, Box, Typography } from '@mui/material'
 import "../styles/PacketsPage/packets.css"
 import PacketsCard from "../components/common/packets/packetsCard"
-import antreman from "../images/antreman.jpg"
-import beslenme from "../images/beslenme.jpg"
-import SuleCetin from "../images/SuleCetin.png"
+import {
+    antrenman,
+    beslenme,
+    SuleCetin,
+} from '../images'
 
 const Packets = () => {
     return (
@@ -34,7 +36,7 @@ const Packets = () => {
                             <center>
                                 <PacketsCard
                                     header="Paket 2"
-                                    image={antreman}
+                                    image={antrenman}
                                     duration="4 Haftalık"
                                     t1="Antreman Planlaması"
                                     t2="Beslenme Planlaması"
@@ -50,7 +52,7 @@ const Packets = () => {
                             <center>
                                 <PacketsCard
                                     header="Paket 3"
-                                    image={antreman}
+                                    image={antrenman}
                                     duration="12 Haftalık"
                                     t1="Antreman Planlaması"
                                     t2="Beslenme Planlaması"
@@ -66,7 +68,7 @@ const Packets = () => {
                             <center>
                                 <PacketsCard
                                     header="Paket 4"
-                                    image={antreman}
+                                    image={antrenman}
                                     duration="24 Haftalık"
                                     t1="Antreman Planlaması"
                                     t2="Beslenme Planlaması"
