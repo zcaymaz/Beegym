@@ -54,17 +54,10 @@ const Navbar = () => {
               </Button>
             </Link>
           </Grid>
-          <Grid item paddingRight={0.7}>
+          <Grid item sx={{ paddingRight: { sm: '0', md: '5em' } }}>
             <Link sx={{ textDecoration: 'none' }} href={'/'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Mağaza</Typography>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item sx={{ paddingRight: { sm: '0', md: '5em' } }}>
-            <Link sx={{ textDecoration: 'none' }} href={'/conctact'}>
-              <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">İletişim</Typography>
               </Button>
             </Link>
           </Grid>
@@ -110,13 +103,13 @@ const Navbar = () => {
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
-                <Link className="menuItemLink" href={'/'}>
+                <Link className="menuItemLink" href={'/team'}>
                   <Typography className="menuItemText">Ekibimiz</Typography>
                 </Link>
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
-                <Link className="menuItemLink" href={'/'}>
+                <Link className="menuItemLink" href={'/packets'}>
                   <Typography className="menuItemText">Paketler</Typography>
                 </Link>
               </MenuItem>
@@ -128,7 +121,7 @@ const Navbar = () => {
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
-                <Link className="menuItemLink" href={'/'}>
+                <Link className="menuItemLink" href={'/blog'}>
                   <Typography className="menuItemText">Blog</Typography>
                 </Link>
               </MenuItem>
@@ -136,12 +129,6 @@ const Navbar = () => {
               <MenuItem>
                 <Link className="menuItemLink" href={'/'}>
                   <Typography className="menuItemText">Mağaza</Typography>
-                </Link>
-              </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
-              <MenuItem>
-                <Link className="menuItemLink" href={'/'}>
-                  <Typography className="menuItemText">İletişim</Typography>
                 </Link>
               </MenuItem>
             </Menu>
