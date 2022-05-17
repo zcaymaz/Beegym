@@ -12,6 +12,7 @@ import {
 import Slider from "react-slick";
 import HeroSlider from "../components/common/HeroSlider";
 import PacketsCard from "../components/common/packets/packetsCard"
+import MutationCard from "../components/common/MutationCard";
 
 const HeroSliderImages = [
     {
@@ -31,10 +32,26 @@ const HeroSliderImages = [
 
 const home = () => {
     const heroSlider = React.createRef()
+    const mutation = React.createRef()
     const heroslidersetting = {
         dots: false,
         arrows: false,
         slidesToShow: 1,
+        autoplay: true,
+        speed: 3000,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 550,
+                settings: { slidesToShow: 1, slidesToScroll: 1, }
+            }
+        ]
+    };
+    const mutationsetting = {
+        dots: false,
+        arrows: false,
+        slidesToShow: 3,
         autoplay: true,
         speed: 3000,
         autoplaySpeed: 2000,
@@ -142,12 +159,30 @@ const home = () => {
                     </center>
                 </Grid>
             </Grid>
-            <Grid container sx={{ paddingTop: '1.3rem', bgcolor: '#d5d5d5' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
+            <Grid container sx={{ paddingTop: '1.3rem', bgcolor: '#000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={12} className="HomePacketSection">
                     <Typography sx={{ fontFamily: 'Mulish', fontSize: '48px', color: '#FFD700', fontWeight: '700' }}>
                         <i>DEĞİŞİMLER</i>
                     </Typography>
                 </Grid>
+                <Grid item xs={12} maxWidth="100%">
+                    <Slider className="HeroSlider" ref={mutation} {...mutationsetting}>
+                        {HeroSliderImages.map((card) => {
+                            return (
+                                <>
+                                    <center>
+                                        <MutationCard
+                                            image={card.image}
+                                        />
+                                    </center>
+                                </>
+                            )
+                        })}
+                    </Slider>
+                    <br />
+                    <br />
+                </Grid>
+
             </Grid>
         </>
     );
