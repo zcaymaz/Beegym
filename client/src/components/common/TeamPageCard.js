@@ -13,13 +13,11 @@ const team = (props) => {
             <Box className='body'>
                 <Container className='cardBody'>
                     <Grid container direction={'row'}>
-                        <Grid xs={12} sm={12} md={8} lg={8} sx={{
-                            paddingTop: '50px'
-                        }}>
+                        <Grid xs={12} sm={12} md={8} lg={8}>
                             <Grid container direction={'column'}>
                                 <Grid lg={12}>
                                     <Grid container direction={'row'} className='personelName'>
-                                        <Grid xs={12} sm={3} md={4} lg={3}>
+                                        <Grid xs={12} sm={3} md={4} lg={3} justifyContent='start'>
                                             <Typography className='name'>
                                                 {props.name}
                                             </Typography>

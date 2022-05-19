@@ -1,0 +1,17 @@
+.bodyContainer{
+    background-color: #EFEDE5;
+    border: 5px solid #6C8878;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 0px 0px 0px 18px #495C51;
+}
+.life {
+    text-align: center;
+    padding-top: 35px;
+    font-family: Mulish !important;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35.14px;
+    letter-spacing: 0.03rem;
+    color: #8C9978;;
+}

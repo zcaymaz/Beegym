@@ -108,20 +108,26 @@
 @media (max-width: 520px) {
     .name {
         font-size: 25px;
+        padding: 0px;
+        height: 42px;
     }
 
     .surname {
         font-size: 25px;
+        padding: 0px;
+        height: 52px;
     }
 
     .surname2 {
         font-size: 25px;
         padding-left: 15px;
+        height: 52px;
     }
 
     .surname3 {
         font-size: 25px;
         padding-left: 10px;
+        height: 52px;
     }
 }
 
@@ -147,13 +153,12 @@
     font-family: Mulish;
     font-size: 40px;
     font-weight: 900;
-    line-height: 63px;
+    line-height: 43px;
     color: #FFFFFF;
     font-style: italic;
     text-align: center;
     padding: 40px 30px 10px 40px;
 }
-
 @media (max-width: 900px) {
     .job {
         font-size: 35px;
@@ -172,7 +177,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .job {
         font-size: 18px;
         padding-top: 5px;
@@ -183,6 +188,8 @@
     border: #EABE4C 3.5px solid;
     border-radius: 22px;
     padding: 40px 60px 60px 60px;
+    height: 750px;
+    overflow-y: auto;
 }
 
 @media (max-width: 400px) {
@@ -224,6 +231,7 @@
     line-height: 28px;
     letter-spacing: 0.02rem;
     color: #FFFFFF;
+    padding-top: 40px;
 }
 
 @media (max-width: 600px) {
