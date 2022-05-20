@@ -1,6 +1,5 @@
 import React from 'react'
 import Team from '../components/common/TeamPageCard';
-import Changes from '../components/common/ChangesPageCard';
 
 const team = () => {
     return (
@@ -36,7 +35,6 @@ const team = () => {
             text3="2020 yılında sporcu beslenmesi üzerine danışmanlık hizmetini çalışma alanlarıma ekleyerek diyetisyenlik mesleğimi devam ettirmekteyim."
             image={require('../images/SuleCetin.png')}
         />
-        <Changes />
         </>
     )
 }
