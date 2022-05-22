@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
           </Grid>
           <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/mutation'}>
+            <Link sx={{ textDecoration: 'none' }} href={'/changes'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Değişimler</Typography>
               </Button>
@@ -53,7 +53,7 @@ const Navbar = () => {
             </Link>
           </Grid>
           <Grid item sx={{ paddingRight: { sm: '0', md: '5em' } }}>
-            <Link sx={{ textDecoration: 'none' }} href={'/'}>
+            <Link sx={{ textDecoration: 'none' }} href={'/market'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Mağaza</Typography>
               </Button>
@@ -110,7 +110,7 @@ const Navbar = () => {
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
-                <Link className="menuItemLink" href={'/mutation'}>
+                <Link className="menuItemLink" href={'/changes'}>
                   <Typography className="menuItemText">Değişimler</Typography>
                 </Link>
               </MenuItem>
@@ -122,7 +122,7 @@ const Navbar = () => {
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
-                <Link className="menuItemLink" href={'/'}>
+                <Link className="menuItemLink" href={'/marketPlace'}>
                   <Typography className="menuItemText">Mağaza</Typography>
                 </Link>
               </MenuItem>

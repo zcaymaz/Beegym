@@ -172,7 +172,41 @@
     background-image: url(../images/homepacketsection.jpg);
     background-position: 50% 78%;
 }
-.mutationCard {
-    width: 100%;
-    height: 25rem;
+.marketText {
+    background-color: #1d1d1d;
+    color: #eee;
+    text-align: center;
+    padding: 60px;
+    font-family: Mulish;
+    font-size: 30px !important;
+    text-decoration: double;
+    text-transform: uppercase;
+    border: 3px solid red;
+    border-radius: 85px;
+}
+.bodyContainer {
+    border: 5px solid #6C8878;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 18px rgba(140, 153, 120, 0.25);
+    background: #1D1D1D;
+    height: 300px;
+    min-width: 260px !important;
+    padding: 0px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.life {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 20px;
+    text-align: center;
+    color: #8C9978;
+    padding: 30px;
+}
+.pageBody {
+    background-color: #262626;
+    padding: 30px;
 }

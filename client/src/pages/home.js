@@ -11,8 +11,8 @@ import {
 } from '../images'
 import Slider from "react-slick";
 import HeroSlider from "../components/common/HeroSlider";
-import PacketsCard from "../components/common/packets/packetsCard"
-import MutationCard from "../components/common/MutationCard";
+import PacketsCard from "../components/common/packets/packetsCard";
+import HomePageChangesCard from "../components/common/HomePageChangesCard";
 
 const HeroSliderImages = [
     {
@@ -32,7 +32,7 @@ const HeroSliderImages = [
 
 const home = () => {
     const heroSlider = React.createRef()
-    const mutation = React.createRef()
+    const changes = React.createRef()
     const heroslidersetting = {
         dots: false,
         arrows: false,
@@ -48,7 +48,7 @@ const home = () => {
             }
         ]
     };
-    const mutationsetting = {
+    const changessetting = {
         dots: false,
         arrows: false,
         slidesToShow: 3,
@@ -58,8 +58,12 @@ const home = () => {
         pauseOnHover: true,
         responsive: [
             {
-                breakpoint: 550,
+                breakpoint: 650,
                 settings: { slidesToShow: 1, slidesToScroll: 1, }
+            },
+            {
+                breakpoint: 920,
+                settings: { slidesToShow: 2, slidesToScroll: 2, }
             }
         ]
     };
@@ -165,13 +169,13 @@ const home = () => {
                         <i>DEĞİŞİMLER</i>
                     </Typography>
                 </Grid>
-                <Grid item xs={12} maxWidth="100%">
-                    <Slider className="HeroSlider" ref={mutation} {...mutationsetting}>
+                <Grid item xs={11.3} lg={11.6} padding='0px'>
+                    <Slider className="HeroSlider" ref={changes} {...changessetting}>
                         {HeroSliderImages.map((card) => {
                             return (
                                 <>
                                     <center>
-                                        <MutationCard
+                                        <HomePageChangesCard
                                             image={card.image}
                                         />
                                     </center>
