@@ -6,15 +6,15 @@ const Changes = (props) => {
         <Box className='pageBody'>
             <Container className='bodyContainer'>
                 <Grid container direction={'row'}>
-                    <Grid xs={12} lg={6} textAlign={'center'}>
+                    <Grid xs={12} md={6} lg={6} textAlign={'center'} className='changesImageGrid'>
                         <CardMedia
-                            className='Cardimage'
+                            className='changesCardImage'
                             component="img"
                             height="290"
-                            image={props.media}
+                            image={props.image}
                         />
                     </Grid>
-                    <Grid xs={12} lg={6} className='life'>
+                    <Grid xs={12} md={6} lg={6} className='life'>
                         <Typography className='lifeText'>
                             {props.text}
                         </Typography>

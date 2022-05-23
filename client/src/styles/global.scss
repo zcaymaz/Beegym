@@ -168,10 +168,16 @@
 .HomePacketSection {
     background-color: #000;
     text-align: center;
-    padding-bottom: 1.3rem;
     background-image: url(../images/homepacketsection.jpg);
     background-position: 50% 78%;
 }
+.HomePacketChangesSection {
+    background-color: #d5d5d5;
+    text-align: center;
+    background-image: url(../images/homepacketsection.jpg);
+    background-position: 50% 78%;
+}
+
 .marketText {
     background-color: #1d1d1d;
     color: #eee;
@@ -191,6 +197,7 @@
     background: #1D1D1D;
     height: 300px;
     min-width: 260px !important;
+    width: 100% !important;
     padding: 0px !important;
     overflow-y: auto;
     overflow-x: hidden;
@@ -206,7 +213,18 @@
     color: #8C9978;
     padding: 30px;
 }
-.pageBody {
-    background-color: #262626;
-    padding: 30px;
+.lifeText {
+    padding: 10px;
+}
+.changesImageGrid {
+    padding:  10px !important;
+}
+.changesCardImage {
+    max-height: 270px !important;
+    border-radius: 10px 10px 10px 10px;
+}
+.HomePageCardImage {
+    padding: 20px !important;
+    background-color: #d5d5d5 !important;
+    border-radius: 20px !important;
 }

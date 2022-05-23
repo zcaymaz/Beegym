@@ -163,30 +163,10 @@ const home = () => {
                     </center>
                 </Grid>
             </Grid>
-            <Grid container sx={{ paddingTop: '1.3rem', bgcolor: '#000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={12} className="HomePacketSection">
-                    <Typography sx={{ fontFamily: 'Mulish', fontSize: '48px', color: '#FFD700', fontWeight: '700' }}>
-                        <i>DEĞİŞİMLER</i>
-                    </Typography>
+            <Grid container sx={{ bgcolor: '#000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
+                <Grid item xs={12} lg={12} padding='0px'>
+                    <HomePageChangesCard />
                 </Grid>
-                <Grid item xs={11.3} lg={11.6} padding='0px'>
-                    <Slider className="HeroSlider" ref={changes} {...changessetting}>
-                        {HeroSliderImages.map((card) => {
-                            return (
-                                <>
-                                    <center>
-                                        <HomePageChangesCard
-                                            image={card.image}
-                                        />
-                                    </center>
-                                </>
-                            )
-                        })}
-                    </Slider>
-                    <br />
-                    <br />
-                </Grid>
-
             </Grid>
         </>
     );
