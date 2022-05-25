@@ -1,16 +1,15 @@
-import React from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { CardMedia, Grid, Container } from '@mui/material';
+import React, { useState } from 'react';
+import { CardMedia, Grid, Container, Typography } from '@mui/material';
 import StoreSearchBar from '../components/common/StoreSearchBar';
 import StoreCard from '../components/common/StoreCard';
+import { Button } from '@mui/material';
+
 
 
 const storeData = [
   {
     id: "1",
-    name: "Paslanmaz Çelik Shaker",
+    name: "Paslanmaz Çelik Shakers",
     description: "739ml",
     price: "119.90"
   },
@@ -28,7 +27,7 @@ const storeData = [
   },
   {
     id: "4",
-    name: "YOU CAN GO HOME NOW TSHIRT",
+    name: "YOU CAN GO HOME NOW TSHIRT asdasdasdasdasdwekbuweubvyuvhvrhuvunveıuevwuweıucnu",
     description: "GRI MELANJ",
     price: "129.90"
   },
@@ -202,39 +201,18 @@ const storeData = [
   },
 ]
 
-const settings = {
-  arrows: false,
-  dots: true,
-  infinite: false,
-  rows: 3,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 500,
-      settings: { rows:16,slidesToShow: 1, slidesToScroll:1 }
-    },
-    {
-      breakpoint: 763,
-      settings: { slidesToShow: 1, slidesToScroll:1 }
-    },
-    {
-      breakpoint: 1000,
-      settings: { slidesToShow: 2 }
-    },
-    {
-      breakpoint: 1229,
-      settings: { slidesToShow: 2 }
-    },
-    {
-      breakpoint: 1430,
-      settings: { slidesToShow: 3 }
-    },
-  ]
-}
 
 
 const Store = () => {
+
+  const [noOfElement, setnoOfElement] = useState(10);
+
+  const loadMore = () => {
+    setnoOfElement(noOfElement + 5);
+  }
+
+  const slice = storeData.slice(0, noOfElement);
+
   return (
     <>
       <CardMedia
@@ -243,31 +221,26 @@ const Store = () => {
       <StoreSearchBar />
 
 
-      <Container maxWidth="100%" className="store-card-container"  >
-
-
-        
-          <center>
-            <Slider {...settings}  >
-              {storeData.map((store) => {
-                return (
-                  <StoreCard
-                    id={store.id}
-                    name={store.name}
-                    description={store.description}
-                    price={store.price}
-                  />
-  
-                )
-              })}
-            </Slider>
-          </center>
-        
-
-
+      <Container maxWidth="100%">
+        <Grid container className="store-card-container" >
+          {slice.map((store) => {
+            return (
+              <StoreCard
+                id={store.id}
+                name={store.name}
+                description={store.description}
+                price={store.price}
+              />
+            )
+          })}
+        </Grid>
       </Container>
 
-
+      <center>
+        <Button className="store-load-more-btn" variant="contained" onClick={() => loadMore()} >
+          <Typography>Daha Fazla Yükle</Typography>
+        </Button>
+      </center>
     </>
   )
 }

@@ -41,14 +41,25 @@ body {
         color: black !important;
     }
 
+    &-load-more-btn {
+        background-color: #CECECE !important;
+        margin-bottom: 1rem !important;
+    }
+
     &-card {
+        flex: 1 1 290px !important;
         margin-left: 1rem;
         margin-bottom: 7.5rem;
         border-radius: 20px !important;
         max-width: 21.875rem;
-        min-height:30rem;
-        max-height:30rem;
+        min-height: 30rem;
+        max-height: 30rem;
         background-color: #CECECE !important;
+
+        &-container {
+            display: flex !important;
+            flex-wrap: wrap !important;
+        }
 
         &-media1 {
             background-image: url(../images/store-image1.png);
@@ -61,8 +72,15 @@ body {
             font-weight: bold !important;
             line-height: 43px !important;
             color: #1f1f1f !important;
-            &-area-grid{
-                min-height: 4rem;
+            text-align: center !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical !important;
+            -webkit-line-clamp: 2 !important;
+
+            &-area-grid {
+                min-height: 4rem !important;
             }
         }
 
@@ -72,17 +90,22 @@ body {
             font-weight: 600 !important;
             line-height: 38px !important;
             letter-spacing: 0em !important;
-            color:  #4F4F4F !important;
+            color: #4F4F4F !important;
             float: left;
             margin-top: 0.3rem !important;
             margin-left: 1.5rem !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            white-space: nowrap !important;
         }
+
         &-price {
             font-size: x-large !important;
             font-weight: 600 !important;
             line-height: 38px !important;
             letter-spacing: 0em !important;
-            float: right ;
+            float: right;
+
         }
     }
 }
@@ -125,17 +148,16 @@ body {
     }
 
 }
-@media(max-width:375px){
-    .store-card{
-        &-name{
-            font-size: 22px !important;
-        }
-        &-description{
-            font-size: 15px !important;
+
+@media(max-width:375px) {
+    .store-card {
+        &-description {
+
             margin-left: 1.5rem !important;
             margin-top: 0.25rem !important;
         }
-        &-name-area-grid{
+
+        &-name-area-grid {
             min-height: 6rem;
         }
     }
