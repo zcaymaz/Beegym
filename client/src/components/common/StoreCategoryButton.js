@@ -4,7 +4,7 @@ import { Grid, Button} from '@mui/material';
 const StoreCategoryButton = () => {
     return (
         <>
-                <Grid container>
+                <Grid container >
                     <Grid item xs={6} sm={4} md={5} lg={4} xl={4} >
                         <Button variant="text" className="store-category-button" >SUPPLEMENTLER</Button>
                     </Grid>

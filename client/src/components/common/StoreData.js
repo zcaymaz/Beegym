@@ -3,192 +3,224 @@ const storeData = [
         id: "1",
         name: "Paslanmaz Çelik Shakers",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category:"shaker"
     },
     {
         id: "2",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category:"shaker",
     },
     {
         id: "3",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category:"shaker",
     },
     {
         id: "4",
         name: "YOU CAN GO HOME NOW TSHIRT asdasdasdasdasdwekbuweubvyuvhvrhuvunveıuevwuweıucnu",
         description: "GRI MELANJ",
-        price: "129.90"
+        price: "129.90",
+        category: "tshirt",
     },
     {
         id: "5",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category:"shaker",
     },
     {
         id: "6",
         name: "YOU CAN GO HOME NOW TSHIRT",
         description: "GRI MELANJ",
-        price: "129.90"
+        price: "129.90",
+        category: "tshirt",
     },
     {
         id: "7",
         name: "GLUTAPURE 500GR",
         description: "AMINO ASIT",
-        price: "299.90"
+        price: "299.90",
+        category: "suplement",
     },
     {
         id: "8",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "9",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "10",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "11",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "12",
         name: "YOU CAN GO HOME NOW TSHIRT",
         description: "GRI MELANJ",
-        price: "129.90"
+        price: "129.90",
+        category: "tshirt",
     },
     {
         id: "13",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "14",
         name: "YOU CAN GO HOME NOW TSHIRT",
         description: "GRI MELANJ",
-        price: "129.90"
+        price: "129.90",
+        category: "tshirt",
     },
     {
         id: "15",
         name: "GLUTAPURE 500GR",
         description: "AMINO ASIT",
-        price: "299.90"
+        price: "299.90",
+        category: "suplement",
     },
     {
         id: "16",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "17",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "18",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "19",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "20",
         name: "YOU CAN GO HOME NOW TSHIRT",
         description: "GRI MELANJ",
-        price: "129.90"
+        price: "129.90",
+        category: "tshirt",
     },
     {
         id: "21",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "22",
         name: "YOU CAN GO HOME NOW TSHIRT",
         description: "GRI MELANJ",
-        price: "129.90"
+        price: "129.90",
+        category: "tshirt",
     },
     {
         id: "23",
         name: "GLUTAPURE 500GR",
         description: "AMINO ASIT",
-        price: "299.90"
+        price: "299.90",
+        category: "suplement",
     },
     {
         id: "24",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "25",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "26",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "27",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "28",
         name: "YOU CAN GO HOME NOW TSHIRT",
         description: "GRI MELANJ",
-        price: "129.90"
+        price: "129.90",
+        category: "tshirt",
     },
     {
         id: "29",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
     {
         id: "30",
         name: "YOU CAN GO HOME NOW TSHIRT",
         description: "GRI MELANJ",
-        price: "129.90"
+        price: "129.90",
+        category: "tshirt",
     },
     {
         id: "31",
         name: "GLUTAPURE 500GR",
         description: "AMINO ASIT",
-        price: "299.90"
+        price: "299.90",
+        category: "suplement",
     },
     {
         id: "32",
         name: "Paslanmaz Çelik Shaker",
         description: "739ml",
-        price: "119.90"
+        price: "119.90",
+        category: "shaker",
     },
 ]

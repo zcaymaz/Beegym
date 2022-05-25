@@ -212,6 +212,7 @@ const Store = () => {
   }
 
   const slice = storeData.slice(0, noOfElement);
+  
 
   return (
     <>
@@ -222,17 +223,20 @@ const Store = () => {
 
 
       <Container maxWidth="100%">
+
         <Grid container className="store-card-container" >
           {slice.map((store) => {
             return (
               <StoreCard
                 id={store.id}
+                category={store.category}
                 name={store.name}
                 description={store.description}
                 price={store.price}
               />
             )
           })}
+
         </Grid>
       </Container>
 

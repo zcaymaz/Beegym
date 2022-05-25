@@ -5,7 +5,7 @@ import { Grid, Typography, Button, CardActionArea, Card, CardContent, CardMedia 
 const StoreCard = (props) => {
     return (
         <>
-            <Card className="store-card">
+            <Card className="store-card" key={props.id}>
                 <CardActionArea href="cardata">
                     <CardMedia
                         component="img"
