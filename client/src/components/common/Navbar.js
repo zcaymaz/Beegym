@@ -96,31 +96,27 @@ const Navbar = () => {
                   <Typography className="menuItemText">AnaSayfa</Typography>
                 </Link>
               </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
+             
               <MenuItem>
                 <Link className="menuItemLink" href={'/team'}>
                   <Typography className="menuItemText">Ekibimiz</Typography>
                 </Link>
               </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
                 <Link className="menuItemLink" href={'/packets'}>
                   <Typography className="menuItemText">Paketler</Typography>
                 </Link>
               </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
                 <Link className="menuItemLink" href={'/changes'}>
                   <Typography className="menuItemText">Değişimler</Typography>
                 </Link>
               </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
                 <Link className="menuItemLink" href={'/blog'}>
                   <Typography className="menuItemText">Blog</Typography>
                 </Link>
               </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
                 <Link className="menuItemLink" href={'/marketPlace'}>
                   <Typography className="menuItemText">Mağaza</Typography>
