@@ -2,6 +2,7 @@
     background-color: #262626;
     padding: 60px;
 }
+
 .name {
     font-size: 55px;
     text-transform: uppercase;
@@ -9,8 +10,10 @@
     font-weight: bolder;
     line-height: 88px;
     font-family: Mulish;
-    color: #FFFFFF
+    color: #FFFFFF;
+
 }
+
 .surname {
     font-size: 55px;
     text-transform: uppercase;
@@ -18,8 +21,9 @@
     font-weight: bolder;
     line-height: 88px;
     font-family: Mulish;
-    color: #EABE4C
+    color: #EABE4C;
 }
+
 .surname2 {
     font-size: 55px;
     text-transform: uppercase;
@@ -29,6 +33,7 @@
     font-family: Mulish;
     color: #A1FEAA;
 }
+
 .surname3 {
     font-size: 55px;
     text-transform: uppercase;
@@ -38,7 +43,8 @@
     font-family: Mulish;
     color: #507BE9;
 }
-@media (max-width: 450px) {
+
+@media (max-width: 600px) {
     .personelName {
         text-align: center;
     }
@@ -46,138 +52,177 @@
 
 @media (max-width: 900px) {
     .name {
-        font-size: 45px;
+        font-size: 50px;
     }
+
     .surname {
-        font-size: 45px;
+        font-size: 50px;
     }
+
     .surname2 {
-        font-size: 45px;
+        font-size: 35px;
     }
+
     .surname3 {
-        font-size: 45px;
+        font-size: 35px;
     }
 }
+
 @media (max-width: 700px) {
     .name {
-        font-size: 35px;
+        font-size: 40px;
     }
+
     .surname {
-        font-size: 35px;
+        font-size: 40px;
     }
+
     .surname2 {
-        font-size: 35px;
+        font-size: 30px;
     }
+
     .surname3 {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 599px) {
     .name {
-        font-size: 30px;
+        font-size: 45px;
     }
+
     .surname {
-        font-size: 30px;
+        font-size: 45px;
     }
+
     .surname2 {
         font-size: 30px;
         padding-left: 20px;
     }
+
     .surname3 {
         font-size: 30px;
     }
 }
+
 @media (max-width: 520px) {
     .name {
         font-size: 25px;
+        padding: 0px;
+        height: 42px;
     }
+
     .surname {
         font-size: 25px;
+        padding: 0px;
+        height: 52px;
     }
+
     .surname2 {
         font-size: 25px;
         padding-left: 15px;
-    }.surname3 {
+        height: 52px;
+    }
+
+    .surname3 {
         font-size: 25px;
         padding-left: 10px;
+        height: 52px;
     }
 }
+
 @media (max-width: 290px) {
     .name {
         font-size: 15px;
     }
+
     .surname {
         font-size: 15px;
     }
+
     .surname2 {
         font-size: 15px;
     }
+
     .surname3 {
         font-size: 15px;
     }
 }
+
 .job {
     font-family: Mulish;
     font-size: 40px;
     font-weight: 900;
-    line-height: 63px;
+    line-height: 43px;
     color: #FFFFFF;
     font-style: italic;
     text-align: center;
-    padding: 70px 30px 10px 40px;
+    padding: 40px 30px 10px 40px;
 }
 @media (max-width: 900px) {
     .job {
         font-size: 35px;
     }
 }
+
 @media (max-width: 700px) {
     .job {
         font-size: 28px;
     }
 }
+
 @media (max-width: 600px) {
     .job {
         font-size: 20px;
     }
 }
-@media (max-width: 500px) {
+
+@media (max-width: 550px) {
     .job {
         font-size: 18px;
         padding-top: 5px;
     }
 }
+
 .cardBody {
     border: #EABE4C 3.5px solid;
     border-radius: 22px;
     padding: 40px 60px 60px 60px;
+    height: 750px;
+    overflow-y: auto;
 }
+
 @media (max-width: 400px) {
     .cardBody {
         padding: 25px;
         padding-top: 0px;
     }
 }
+
 @media (max-width: 1072px) {
     .cardBody {
         padding-left: 35px;
     }
 }
+
 @media (max-width: 1045px) {
     .cardBody {
-        padding-right: 95px;
+        padding-right: 45px;
     }
 }
+
 @media (max-width: 980px) {
     .cardBody {
-        padding-right: 125px;
+        padding-right: 20px;
     }
 }
+
 @media (max-width: 900px) {
     .cardBody {
-        padding: 45px
+        padding: 30px
     }
 }
+
 .enesLife {
     font-size: 20px;
     font-family: Mulish;
@@ -186,22 +231,27 @@
     line-height: 28px;
     letter-spacing: 0.02rem;
     color: #FFFFFF;
+    padding-top: 40px;
 }
+
 @media (max-width: 600px) {
     .enesLife {
         font-size: 17px;
     }
 }
+
 @media (max-width: 400px) {
     .enesLife {
+        text-align: center;
         font-size: 15px;
         padding-bottom: 10px;
     }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 500px) {
     img {
         justify-content: center;
         padding-left: 20px;
-        width: 102%;
+        width: 100%;
     }
 }
