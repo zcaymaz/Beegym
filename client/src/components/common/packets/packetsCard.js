@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardMedia, Grid, Typography } from '@mui/material'
+import { Box, Button, Card, CardMedia, Grid, Typography, } from '@mui/material'
 import React from 'react'
 import "../../../styles/PacketsPage/packets.css"
 
@@ -6,6 +6,7 @@ import "../../../styles/PacketsPage/packets.css"
 const packetsCard = props => {
     return (
         <>
+        <Box className='packetsCardOut'>
             <Card className='packetsCard'>
                 <Grid container justifyContent="center" alignItems="center">
                     <Grid item xs={12}>
@@ -64,6 +65,7 @@ const packetsCard = props => {
                     </Grid>
                 </Grid>
             </Card>
+            </Box>
         </>
     )
 }

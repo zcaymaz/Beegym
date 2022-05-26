@@ -1,9 +1,19 @@
 import React from 'react'
+import { CardMedia, Typography } from '@mui/material';
 import Team from '../components/common/TeamPageCard';
 
 const team = () => {
     return (
         <>
+        <Typography className='teamPageHead'>Ekibimiz</Typography>
+        <CardMedia
+                component="img"
+                height="189"
+                image={require('../images/TeamImage.jpeg')}
+                sx={{
+                    WebkitFilter: 'blur(1px)'
+                }}
+            />
         <Team
             name="enes"
             surname="uludoğan"

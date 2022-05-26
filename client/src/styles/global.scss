@@ -15,6 +15,17 @@
     }
 }
 
+@media (max-width: 810px) {
+    .Footer {
+        background: linear-gradient(90deg, #141313 10%, #2e3440 50%, #141313 100%) !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .Footer {
+        background: linear-gradient(90deg, #141313 1%, #2e3440 30%, #2e3440 81%, #141313 100%) !important;
+    }
+}
 
 .Footer {
     padding-top: 10px;
@@ -24,11 +35,26 @@
     font-size: 13px;
     color: #fff;
     font-family: Mulish;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 25%, rgba(4, 4, 134, 1) 77%, rgb(3, 9, 172) 100%);
+    background: linear-gradient(90deg, #141313 20%, #2e3440 56%, #141313 76%);
 }
 
+/*background: linear-gradient(90deg, rgba(2, 0, 36, 1) 25%, rgba(4, 4, 134, 1) 77%, rgb(3, 9, 172) 100%);*/
+
 .NavbarContainer {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 25%, rgba(4, 4, 134, 1) 77%, rgb(3, 9, 172) 100%);
+    /* background-color: #2e3440;*/
+    background: linear-gradient(90deg, #141313 30%, #404755 60%, #404755 95%, #141313 102%);
+}
+
+@media (max-width: 1000px) {
+    .NavbarContainer {
+        background: linear-gradient(90deg, #141313 20%, #2e3440 30%, #2e3440 95%, #141313 101%);
+    }
+}
+
+@media (max-width: 1500px) {
+    .NavbarContainer {
+        background: linear-gradient(90deg, #141313 30%, #404755 40%, #404755 95%, #141313 101%);
+    }
 }
 
 .NavbarLogo {
@@ -44,6 +70,24 @@
     text-decoration: none;
 }
 
+.navbarButton::after {
+    content: '' !important;
+    width: 100% !important;
+    height: 1.3px !important;
+    background-color: #EABE4C !important;
+    border-radius: 2px !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    transform: scaleX(0) !important;
+    transform-origin: center !important;
+    transition: transform .37s ease !important;
+}
+
+.navbarButton:hover::after {
+    transform: scaleX(1) !important;
+}
+
 .menuItemText {
     font-family: Mulish !important;
     text-transform: uppercase;
@@ -55,8 +99,22 @@
     color: #67696f !important;
 }
 
-.NavbarDivider {
-    width: 70%;
+.menuItemText::after {
+    content: '' !important;
+    width: 100% !important;
+    height: 2px !important;
+    background-color: #EABE4C !important;
+    border-radius: 2px !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    transform: scaleX(0) !important;
+    transform-origin: center !important;
+    transition: transform .0.5s ease !important;
+}
+
+.menuItemText:hover::after {
+    transform: scaleX(1) !important;
 }
 
 .blogCard {
@@ -170,11 +228,214 @@
 .HomePacketSection {
     background-color: #000;
     text-align: center;
-    padding-bottom: 1.3rem;
     background-image: url(../images/homepacketsection.jpg);
     background-position: 50% 78%;
 }
-.mutationCard {
+
+.homePageChangesHeadBackground {
+    text-align: center;
+    background-color: #EABE4C;
+    background-position: 50% 78%;
+    height: 106px;
+    margin-top: 30px !important;
+}
+
+.marketText {
+    background-color: #000000;
+    color: #EABE4C;
+    text-align: center;
+    padding: 60px;
+    font-family: Mulish;
+    font-size: 30px !important;
+    text-decoration: double;
+    text-transform: uppercase;
+    border: 3px solid red;
+    border-radius: 85px;
+    box-shadow: 0px 0px 50px 40px rgba(153, 124, 120, 0.25);
+}
+
+.bodyContainer {
+    border: 3px solid #6C8878;
+    border-radius: 20px;
+    box-shadow: 0px 0px 32px 15px rgba(140, 153, 120, 0.25);
+    background: #1D1D1D;
+    height: 300px;
+    min-width: 260px !important;
+    width: 100% !important;
+    padding: 0px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bodyContainer:hover {
+    background-color: #46554c;
+}
+
+.life {
+    font-family: 'Mulish' !important;
+    font-weight: bolder !important;
+    font-size: 28px !important;
+    line-height: 20px !important;
+    text-align: center;
+    color: #8C9978;
+    padding: 30px !important;
+}
+
+.life:hover {
+    color: white;
+    font-size: 30px !important;
+    font-weight: 800 !important;
+}
+
+.lifeText {
+    padding: 10px;
+}
+
+.changesImageGrid {
+    padding: 10px !important;
+}
+
+.changesCardImage {
+    max-height: 270px !important;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.HomePageCardImage {
+    padding: 24px !important;
+    background-color: #000000 !important;
+}
+
+.pageBody {
+    background-color: #1d1d1d;
+    padding: 40px;
+}
+
+.changesSlider {
+    background-color: red;
+}
+
+.homePageChangesHead {
+    font-family: Mulish !important;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    color: #262626;
+    text-align: center !important;
+    letter-spacing: 1px !important;
+}
+
+@media (max-width: 550px) {
+    .marketText {
+        font-size: 18px !important;
+        padding: 30px !important;
+    }
+
+    .marketBody {
+        padding: 45px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .marketText {
+        font-size: 14.4px !important;
+        padding: 20px !important;
+    }
+
+    .marketBody {
+        padding: 45px !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .marketText {
+        font-size: 13px !important;
+        padding: 10px !important;
+    }
+
+    .marketBody {
+        padding: 18px !important;
+    }
+}
+
+.marketBody {
+    padding: 75px;
+}
+
+.changesSliderGrid {
+    padding: 16px;
+}
+
+.missionBuild {
+    background-image: radial-gradient(circle, #eaca78, #e3b540, #eba800);
+    height: auto;
+    border-radius: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1220px) {
+    .missionOut {
+        padding: 18px;
+    }
+}
+
+.missionGrid {
+    word-wrap: break-word;
+    padding: 20px 10px 20px 10px;
+}
+
+@media (max-width: 550px) {
+    .missionText {
+        font-size: 11px !important;
+    }
+}
+
+.missionText {
+    font-family: Mulish !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 1.39rem !important;
+    letter-spacing: 0.3px !important;
+}
+
+.teamPageHead {
+    position: absolute;
+    left: 45% !important;
+    font-size: 70px !important;
+    font-weight: 900 !important;
+    color: #EABE4C;
+    z-index: 2;
+    font-style: italic;
+    font-family: Mulish !important;
+    line-height: 60px !important;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: transl+ate(-45%, 0%);
     width: 100%;
-    height: 25rem;
+    text-align: center;
+    height: 13.5%;
+    padding-top: 70px;
+}
+@media (max-width: 400px) {
+    img {
+        justify-content: center;
+        padding-left: 0px !important;
+        width: 102%;
+    }
+}
+
+.homePageMissionHead {
+    font-family: Mulish !important;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    color: #EABE4C !important;
+    text-align: center !important;
+    letter-spacing: 1px !important;
+}
+
+.homePageMissionHeadBackground {
+    text-align: center;
+    background-color: #262626;
+    background-position: 50% 78%;
+    height: 106px;
+    margin-top: 30px !important;
 }

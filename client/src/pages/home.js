@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography, Box } from "@mui/material";
 import {
     Sliderimage1,
     cardimage2,
@@ -11,9 +11,9 @@ import {
 } from '../images'
 import Slider from "react-slick";
 import HeroSlider from "../components/common/HeroSlider";
-import PacketsCard from "../components/common/packets/packetsCard"
-import MutationCard from "../components/common/MutationCard";
-
+import PacketsCard from "../components/common/packets/packetsCard";
+import HomePageChangesCard from "../components/common/HomePageChangesCard";
+import MissionPage from "../components/common/Mission";
 const HeroSliderImages = [
     {
         image: Sliderimage1,
@@ -32,7 +32,6 @@ const HeroSliderImages = [
 
 const home = () => {
     const heroSlider = React.createRef()
-    const mutation = React.createRef()
     const heroslidersetting = {
         dots: false,
         arrows: false,
@@ -48,24 +47,9 @@ const home = () => {
             }
         ]
     };
-    const mutationsetting = {
-        dots: false,
-        arrows: false,
-        slidesToShow: 3,
-        autoplay: true,
-        speed: 3000,
-        autoplaySpeed: 2000,
-        pauseOnHover: true,
-        responsive: [
-            {
-                breakpoint: 550,
-                settings: { slidesToShow: 1, slidesToScroll: 1, }
-            }
-        ]
-    };
     return (
         <>
-            <Container maxWidth="100%" sx={{ height: '42rem', bgcolor: '#d5d5d5', }}>
+            <Container maxWidth="100%" sx={{ height: '42.9rem', bgcolor: '#000000', }}>
                 <Slider className="HeroSlider" ref={heroSlider} {...heroslidersetting}>
                     {HeroSliderImages.map((card) => {
                         return (
@@ -78,9 +62,9 @@ const home = () => {
                     })}
                 </Slider>
             </Container>
-            <Grid container sx={{ paddingTop: '1.3rem', paddingBottom: '2%', bgcolor: '#d5d5d5' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={12} className="HomePacketSection">
-                    <Typography sx={{ fontFamily: 'Mulish', fontSize: '48px', color: '#FFD700', fontWeight: '700' }}>
+            <Grid container sx={{ paddingTop: '1.3rem', paddingBottom: '2%', bgcolor: '#000000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
+                <Grid item xs={12} className="homePageChangesHeadBackground">
+                    <Typography className="homePageChangesHead">
                         <i>PAKETLER</i>
                     </Typography>
                 </Grid>
@@ -159,30 +143,20 @@ const home = () => {
                     </center>
                 </Grid>
             </Grid>
-            <Grid container sx={{ paddingTop: '1.3rem', bgcolor: '#000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={12} className="HomePacketSection">
-                    <Typography sx={{ fontFamily: 'Mulish', fontSize: '48px', color: '#FFD700', fontWeight: '700' }}>
-                        <i>DEĞİŞİMLER</i>
+            <Grid container sx={{ bgcolor: '#000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
+                <Grid item xs={12} lg={12} padding='0px'>
+                    <HomePageChangesCard />
+                </Grid>
+            </Grid>
+            <Grid container sx={{ bgcolor: '#000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
+            <Grid item xs={12} className="homePageMissionHeadBackground">
+                    <Typography className="homePageMissionHead">
+                        <i>MİSYONUMUZ</i>
                     </Typography>
                 </Grid>
-                <Grid item xs={12} maxWidth="100%">
-                    <Slider className="HeroSlider" ref={mutation} {...mutationsetting}>
-                        {HeroSliderImages.map((card) => {
-                            return (
-                                <>
-                                    <center>
-                                        <MutationCard
-                                            image={card.image}
-                                        />
-                                    </center>
-                                </>
-                            )
-                        })}
-                    </Slider>
-                    <br />
-                    <br />
+                <Grid item xs={12} lg={12} padding='0px'>
+                    <MissionPage />
                 </Grid>
-
             </Grid>
         </>
     );
