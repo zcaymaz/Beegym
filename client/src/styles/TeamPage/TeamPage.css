@@ -97,7 +97,6 @@
 
     .surname2 {
         font-size: 30px;
-        padding-left: 20px;
     }
 
     .surname3 {
@@ -120,13 +119,11 @@
 
     .surname2 {
         font-size: 25px;
-        padding-left: 15px;
         height: 52px;
     }
 
     .surname3 {
         font-size: 25px;
-        padding-left: 10px;
         height: 52px;
     }
 }
@@ -157,8 +154,10 @@
     color: #FFFFFF;
     font-style: italic;
     text-align: center;
-    padding: 40px 30px 10px 40px;
+    padding: 40px 30px 10px 20px;
+
 }
+
 @media (max-width: 900px) {
     .job {
         font-size: 35px;
@@ -181,6 +180,18 @@
     .job {
         font-size: 18px;
         padding-top: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .body {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .body {
+        padding: 20px;
     }
 }
 
@@ -251,7 +262,7 @@
 @media (max-width: 500px) {
     img {
         justify-content: center;
-        padding-left: 20px;
+        padding-left: 20px !important;
         width: 100%;
     }
 }

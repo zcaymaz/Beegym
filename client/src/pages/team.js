@@ -1,19 +1,21 @@
-import React from 'react'
-import { CardMedia, Typography } from '@mui/material';
+import React from 'react';
+import { 
+    Typography,
+    Box,
+    Grid
+} from '@mui/material';
 import Team from '../components/common/TeamPageCard';
 
 const team = () => {
     return (
         <>
-        <Typography className='teamPageHead'>Ekibimiz</Typography>
-        <CardMedia
-                component="img"
-                height="189"
-                image={require('../images/TeamImage.jpeg')}
-                sx={{
-                    WebkitFilter: 'blur(1px)'
-                }}
-            />
+        <Grid container direction={'column'}>
+        <Box sx={{ height: { xs: '100px', md: '150px' } }} className='packetsNav'>
+                <Typography className='packetsNavText' sx={{ lineHeight: { xs: '100px', md: '150px' }, fontSize: { xs: '40px', md: '50px' } }}>
+                    EKİBİMİZ
+                </Typography>
+            </Box>
+        <Grid>
         <Team
             name="enes"
             surname="uludoğan"
@@ -45,8 +47,10 @@ const team = () => {
             text3="2020 yılında sporcu beslenmesi üzerine danışmanlık hizmetini çalışma alanlarıma ekleyerek diyetisyenlik mesleğimi devam ettirmekteyim."
             image={require('../images/SuleCetin.png')}
         />
+        </Grid>
+        </Grid>
         </>
     )
 }
 
-export default team
+export default team;
