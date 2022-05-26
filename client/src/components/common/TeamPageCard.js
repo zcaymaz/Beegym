@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+
 import {
     Box,
     Container,
     Grid,
     Typography
-} from '@mui/material'
-import '../../styles/TeamPage/TeamPage.css'
+} from '@mui/material';
+import '../../styles/TeamPage/TeamPage.css';
 
 const team = (props) => {
     return (
@@ -57,4 +58,4 @@ const team = (props) => {
     )
 }
 
-export default team
+export default team;
