@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography, Box } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import {
     Sliderimage1,
     cardimage2,
