@@ -3,9 +3,8 @@ import {
     Grid,
     CardMedia,
     Typography,
-    Container,
     Box,
-    Divider
+    Link
 } from '@mui/material';
 import Slider from "react-slick";
 import changes1 from '../../images/Changes1.jpg'
@@ -13,6 +12,7 @@ import changes2 from '../../images/Changes2.jpg'
 import changes3 from '../../images/Changes3.jpg'
 import changes4 from '../../images/Changes4.jpg'
 import changes5 from '../../images/Changes5.jpg'
+import changes6 from '../../images/Changes6.jpg'
 
 const Changes = () => {
     const changessetting = {
@@ -48,61 +48,84 @@ const Changes = () => {
             }}>
                 <Box className="HomePageCardImage">
                     <Slider ref={changes}  {...changessetting} >
-                        <Grid className='changesSliderGrid'>
-                            <CardMedia
-                                component="img"
-                                height="290"
-                                src={changes1}
-                                sx={{
-                                    border:'6px outset #8C9978',
-                                    borderRadius:'15px'
-                                }}
-                            />
-                        </Grid>
-                        <Grid className='changesSliderGrid'>
-                            <CardMedia
-                                component="img"
-                                height="290"
-                                src={changes2}
-                                sx={{
-                                    border:'6px outset #8C9978',
-                                    borderRadius:'15px'
-                                }}
-                            />
-                        </Grid>
-                        <Grid className='changesSliderGrid'>
-                            <CardMedia
-                                component="img"
-                                height="290"
-                                src={changes3}
-                                sx={{
-                                    border:'6px outset #8C9978',
-                                    borderRadius:'15px'
-                                }}
-                            />
-                        </Grid>
-                        <Grid className='changesSliderGrid'>
-                            <CardMedia
-                                component="img"
-                                height="290"
-                                src={changes4}
-                                sx={{
-                                    border:'6px outset #8C9978',
-                                    borderRadius:'15px'
-                                }}
-                            />
-                        </Grid>
-                        <Grid className='changesSliderGrid'>
-                            <CardMedia
-                                component="img"
-                                height="290"
-                                src={changes5}
-                                sx={{
-                                    border:'6px outset #8C9978',
-                                    borderRadius:'15px'
-                                }}
-                            />
-                        </Grid>
+                        <Link href={'/changes'}>
+                            <Grid className='changesSliderGrid'>
+                                <CardMedia
+                                    component="img"
+                                    height="290"
+                                    src={changes1}
+                                    sx={{
+                                        border: '6px outset #8C9978',
+                                        borderRadius: '15px'
+                                    }}
+                                />
+                            </Grid>
+                        </Link>
+                        <Link href={'/changes'}>
+                            <Grid className='changesSliderGrid'>
+                                <CardMedia
+                                    component="img"
+                                    height="290"
+                                    src={changes2}
+                                    sx={{
+                                        border: '6px outset #8C9978',
+                                        borderRadius: '15px'
+                                    }}
+                                />
+                            </Grid>
+                        </Link>
+                        <Link href={'/changes'}>
+                            <Grid className='changesSliderGrid'>
+                                <CardMedia
+                                    component="img"
+                                    height="290"
+                                    src={changes3}
+                                    sx={{
+                                        border: '6px outset #8C9978',
+                                        borderRadius: '15px'
+                                    }}
+                                />
+                            </Grid>
+                        </Link>
+                        <Link href={'/changes'}>
+                            <Grid className='changesSliderGrid'>
+                                <CardMedia
+                                    component="img"
+                                    height="290"
+                                    src={changes4}
+                                    sx={{
+                                        border: '6px outset #8C9978',
+                                        borderRadius: '15px'
+                                    }}
+                                />
+                            </Grid>
+                        </Link>
+                        <Link href={'/changes'}>
+                            <Grid className='changesSliderGrid'>
+                                <CardMedia
+                                    component="img"
+                                    height="290"
+                                    src={changes5}
+                                    sx={{
+                                        border: '6px outset #8C9978',
+                                        borderRadius: '15px'
+                                    }}
+                                />
+                            </Grid>
+                        </Link>
+                        <Link href={'/changes'}>
+                            <Grid className='changesSliderGrid'>
+                                <CardMedia
+                                    component="img"
+                                    height="290"
+                                    src={changes6}
+                                    sx={{
+                                        border: '6px outset #8C9978',
+                                        borderRadius: '15px'
+                                    }}
+                                />
+                            </Grid>
+                        </Link>
                     </Slider>
                 </Box>
             </Grid>

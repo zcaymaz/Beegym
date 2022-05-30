@@ -12,13 +12,15 @@ const Mission = () => {
       <Container className='missionBuild'>
         <Grid className='missionGrid'>
           <Typography className='missionText'>
-            Alışa gelmişlerin dışında olmakla beraber herşeyi sizin için hazırlıyoruz. Bütün amacımız sizin istekleriniz doğrultusunda ilerlemek.
-            Aynı parmak izi gibi vücut yapısı kişiye özeldir. Yüksek tecrübe ve kaliteli hocalarımız sayesinde sadece size özel olmak koşuluyla
-            programlarımızı hazırlıyoruz. Bu yolda ilk amacımız, sizi bu programa mental olarak hazırlamak. Siz hazır olduğunuzda ve diyete
-            başladığınızda geriye kalan herşey bizde. İletişimi kesmiyerek anlık takibde kalıyoruz. Anlık takip ve haftalık analizler sayesinde
-            PT programında hata olmadan ilerlemek çok önemli. Programlarımızda size sunduğumuz spor hareketlerinde ister spor salonu
-            ister evde yapmak mümkün. Spor harektlerindeki ağırlımızın söz konusu; diyet listesi ile beraber ilerlemesidir. Kısacası
-            fit olmak için sadece diyet listesi yetmiyor diyebiliriz. İşte bu yüzden buradayız...
+          Alışa gelmişin dışında olmakla beraber her şeyi sizin için özel olarak planlıyoruz.
+          Aynı parmak izi gibi vücut yapısı da kişiyi özeldir. Yüksek tecrübeli ve eğitimlerini alanı ile alakalı tamamlamış kadromuz ile sizin koşullarına göre planlamalarımızı yapıyoruz.
+          Kişisel uzaktan koçluk programın da ilk amacımız sizin şartlarınız dahilinde devamlılığı yüksek planlamalar yaparak, size sonuç aldırırken sporu ve diyet yapmayı sevmenizi sağlamak. Bunu başardığımız zaman sonuç kaçınılmaz.
+          Kalıplaşmış planlamaların dışına çıkın. 
+          Amacımız sizi savaşa hazırlamak veya olympia yapmak değil, sizi hayaliniz de ki görüntüye katlanılabilir, uygulanabilir planlamalar ile ulaştırmak.
+          İster evde, ister salonda çeşit sorunu olmadan katlanabilir diyetler,
+          Tamamen sizin özel koşullalarınıza göre hazırlanmış anlaşılabilir, uygulanabilir planlamalar.
+          Form gidişatına göre günlük, haftalık revizeler.
+          Forma girmek için daha neyi bekliyorsunuz. Biz size değişimeyi vaat etmiyoruz, garanti veriyoruz.
           </Typography>
         </Grid>
       </Container>
