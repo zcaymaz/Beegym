@@ -5,9 +5,14 @@ const team = () => {
     return (
         <>
         <ChangesCard
+                text="Burcu ile 4 hafta da formdayız.
+                    4 hafta da ciddi ödem kaybı ve yağ oranını düşürerek güzel bir formun temelleri atıldı. Belden 4 cm inceldi."
+                image={require('../images/Changes.jpeg')}
+            />
+            <ChangesCard
                 text="Ezgi ile 4 haftalık incelmemiz,
                     4 hafta da 5 cm beli inceltip, vücut hatlarını ön planala çıkardık. Yoğun tempoda Yüzme antrenörlüğü yaparak, planlamalara uymayı da başardı. Yaza hazırız."
-                image={require('../images/Changes.jpg')}
+                image={require('../images/Changes0.jpg')}
             />
             <ChangesCard
                 text="Anıl ile 12 haftalık serüvenimizde, deri sarkması olmadan 15 kg vererek tamamladık. 
@@ -44,6 +49,11 @@ const team = () => {
             <ChangesCard
                 text="Emre abiyle 12 haftalık temiz bulk dönemi geçirdik. Kendisi toplamda 9 kg alarak, hedeflediği kiloya eriştik."
                 image={require('../images/Changes9.jpg')}
+            />
+             <ChangesCard
+                text="Hüseyin bey ile 8 haftalık değişim,
+                    Kendisinin beslenme ve antrenman planlamalarına kusursuz dikkat etmesi ve iradesinden dolayı tebrik ederim."
+                image={require('../images/Changes10.jpeg')}
             />
         </>
     )

@@ -149,7 +149,7 @@ const home = () => {
                 </Grid>
             </Grid>
             <Grid container sx={{ bgcolor: '#000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
-            <Grid item xs={12} className="homePageMissionHeadBackground">
+                <Grid item xs={12} className="homePageMissionHeadBackground">
                     <Typography className="homePageMissionHead">
                         <i>MİSYONUMUZ</i>
                     </Typography>
