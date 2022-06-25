@@ -9,7 +9,7 @@ export const Footer = () => {
             <Grid container spacing={0} direction="row" justifyContent="center" alignItems="center" className='Footer'>
                 <Grid item xs={12}>
                     <Typography sx={{ fontSize: '16px' }}>
-                        <i>ENES ULUDOGAN FİTNESS</i>
+                        <i>ENES ULUDOGAN FİTNESSS</i>
                     </Typography>
                 </Grid>
                 <Stack direction={'row'}>
