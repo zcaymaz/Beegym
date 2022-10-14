@@ -13,7 +13,7 @@ const Packets = () => {
         <>
             <Box sx={{ height: { xs: '100px', md: '150px' } }} className='packetsNav'>
                 <Typography className='packetsNavText' sx={{ lineHeight: { xs: '100px', md: '150px' }, fontSize: { xs: '40px', md: '50px' } }}>
-                    PAKETLER
+                    PAKETLERRRRR
                 </Typography>
             </Box>
             <Container maxWidth="110%" className='packets-container'>
