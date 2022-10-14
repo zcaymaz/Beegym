@@ -1,7 +1,7 @@
 import React from 'react'
 import ChangesCard from '../components/common/ChangesCard';
 
-const team = () => {
+const changes = () => {
     return (
         <>
         <ChangesCard
@@ -59,4 +59,4 @@ const team = () => {
     )
 }
 
-export default team
+export default changes
