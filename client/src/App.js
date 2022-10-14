@@ -16,7 +16,7 @@ const Home = React.lazy(() => import('./pages/home'))
 // const Blog = React.lazy(() => import('./pages/blog'))
 const Team = React.lazy(() => import('./pages/team'))
 const Packets = React.lazy(() => import('./pages/packets'))
-const Mutation = React.lazy(() => import('./pages/mutation'))
+const Mutation = React.lazy(() => import('./pages/changes'))
 const Market = React.lazy(() => import('./pages/market'))
 
 class App extends Component {

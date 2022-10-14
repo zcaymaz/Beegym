@@ -57,9 +57,18 @@
     }
 }
 
-.NavbarLogo {
-    max-width: 90px;
-    image-rendering: optimizeQuality !important;
+@media (min-width: 300px) {
+    .NavbarLogo {
+        width: 90px;
+        image-rendering: optimizeQuality !important;
+    }
+}
+
+@media (max-width: 299px) {
+    .NavbarLogo {
+        width: 70px;
+        image-rendering: optimizeQuality !important;
+    }
 }
 
 .navbarButton {
@@ -407,6 +416,7 @@
 .packetsNav {
     background-image: url(../images/packetsnav.jpg);
 }
+
 @media (max-width: 400px) {
     img {
         justify-content: center;
