@@ -45,15 +45,15 @@ const Navbar = () => {
               </Button>
             </Link>
           </Grid>
-          <Grid item paddingRight={0.7}>
+          {/* <Grid item paddingRight={0.7}>
             <Link sx={{ textDecoration: 'none' }} href={'/blog'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Blog</Typography>
               </Button>
             </Link>
-          </Grid>
+          </Grid> */}
           <Grid item sx={{ paddingRight: { sm: '0', md: '5em' } }}>
-            <Link sx={{ textDecoration: 'none' }} href={'/'}>
+            <Link sx={{ textDecoration: 'none' }} href={'/market'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Mağaza</Typography>
               </Button>
@@ -115,14 +115,15 @@ const Navbar = () => {
                 </Link>
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>
-              <MenuItem>
+              {/* <MenuItem>
                 <Link className="menuItemLink" href={'/blog'}>
                   <Typography className="menuItemText">Blog</Typography>
                 </Link>
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>
+               */}
               <MenuItem>
-                <Link className="menuItemLink" href={'/'}>
+                <Link className="menuItemLink" href={'/market'}>
                   <Typography className="menuItemText">Mağaza</Typography>
                 </Link>
               </MenuItem>

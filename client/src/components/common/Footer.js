@@ -6,7 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export const Footer = () => {
     return (
         <>
-            <Grid container spacing={0} direction="row" justifyContent="center" alignItems="center" className='Footer'>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='Footer'>
                 <Grid item xs={12}>
                     <Typography sx={{ fontSize: '16px' }}>
                         <i>ENES ULUDOGAN FİTNESS</i>
