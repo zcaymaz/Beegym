@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Link, Button, IconButton, Menu, MenuItem, Divider } from '@mui/material'
+import { Typography, Grid, Link, Button, IconButton, Menu, MenuItem } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import Logo from '../../images/Logo-png.png';
 
@@ -27,7 +27,7 @@ const Navbar = () => {
           <Grid item paddingRight={0.7}>
             <Link sx={{ textDecoration: 'none' }} href={'/team'}>
               <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">Ekibimiz</Typography>
+                <Typography className="navbarButton" variant="navbar">Ekİbİmİz</Typography>
               </Button>
             </Link>
           </Grid>
@@ -39,9 +39,9 @@ const Navbar = () => {
             </Link>
           </Grid>
           <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/mutation'}>
+            <Link sx={{ textDecoration: 'none' }} href={'/changes'}>
               <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">Değişimler</Typography>
+                <Typography className="navbarButton" variant="navbar">Değİşİmler</Typography>
               </Button>
             </Link>
           </Grid>
@@ -96,22 +96,20 @@ const Navbar = () => {
                   <Typography className="menuItemText">AnaSayfa</Typography>
                 </Link>
               </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
+             
               <MenuItem>
                 <Link className="menuItemLink" href={'/team'}>
-                  <Typography className="menuItemText">Ekibimiz</Typography>
+                  <Typography className="menuItemText">Ekİbİmİz</Typography>
                 </Link>
               </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
                 <Link className="menuItemLink" href={'/packets'}>
                   <Typography className="menuItemText">Paketler</Typography>
                 </Link>
               </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
               <MenuItem>
-                <Link className="menuItemLink" href={'/mutation'}>
-                  <Typography className="menuItemText">Değişimler</Typography>
+                <Link className="menuItemLink" href={'/changes'}>
+                  <Typography className="menuItemText">Değİşİmler</Typography>
                 </Link>
               </MenuItem>
               <center><Divider className="NavbarDivider" /></center>

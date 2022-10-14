@@ -1,5 +1,5 @@
 import React, { Component, Suspense } from 'react'
-import {BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import './styles/global.scss'
@@ -24,8 +24,8 @@ class App extends Component {
     return (
       <HashRouter>
         <Suspense fallback={loading}>
-        <Navbar/>
-        <Whatsapp />
+          <Navbar />
+          <Whatsapp />
           <Routes>
             <Route exact path="*" name="Home Page" element={<Home />} />
             {/* <Route exact path="blog" name="Blog Page" element={<Blog />} /> */}
@@ -36,7 +36,6 @@ class App extends Component {
           </Routes>
         </Suspense>
         <Footer />
-        
       </HashRouter>
     )
   }

@@ -17,6 +17,7 @@
     background-color: #1D1D1D;
     color: #DFDDDC;
     border-radius: 13px;
+    border: 2px solid rgb(84, 27, 27);
 }
 .packetsCard:hover {
     background-color: rgb(84, 27, 27);
@@ -86,4 +87,8 @@
 }
 .packetsFooterText3 {
     color: #929292;
+}
+
+.packetsCardOut {
+    padding: 10px;
 }
