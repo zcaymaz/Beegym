@@ -65,7 +65,7 @@ const home = () => {
             <Grid container sx={{ paddingTop: '1.3rem', paddingBottom: '2%', bgcolor: '#000000' }} spacing={3} direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={12} className="homePageChangesHeadBackground">
                     <Typography className="homePageChangesHead">
-                        <i>PAKETLER</i>
+                        <i>SELAMLARRRRRRR</i>
                     </Typography>
                 </Grid>
                 <Grid item md={6} xl={3.8}>
