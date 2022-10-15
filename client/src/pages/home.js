@@ -2,9 +2,6 @@ import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import {
     Sliderimage1,
-    cardimage2,
-    cardimage3,
-    cardimage4,
     antrenman,
     beslenme,
     SuleCetin,
@@ -19,13 +16,7 @@ const HeroSliderImages = [
         image: Sliderimage1,
     },
     {
-        image: cardimage2,
-    },
-    {
-        image: cardimage3,
-    },
-    {
-        image: cardimage4,
+        image: antrenman,
     },
 
 ]

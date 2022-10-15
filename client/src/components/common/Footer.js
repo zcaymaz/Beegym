@@ -1,6 +1,5 @@
 import { Grid, IconButton, Stack, Typography } from '@mui/material'
 import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const Footer = () => {
@@ -18,9 +17,6 @@ export const Footer = () => {
                     </IconButton>
                     <IconButton target={'_blank'} href={'https://api.whatsapp.com/send?phone=905339170698'}>
                         <WhatsAppIcon fontSize='large' sx={{ color: 'white' }} />
-                    </IconButton>
-                    <IconButton className='aciklama' href="#" data-title="enesuludoganfitness@gmail.com" sx={{ color: 'white' }}>
-                        <EmailIcon fontSize='large' sx={{ color: 'white' }} />
                     </IconButton>
                 </Stack>
                 <Grid item xs={12}>

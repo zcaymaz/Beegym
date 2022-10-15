@@ -4,9 +4,10 @@ import React from 'react'
 const market = () => {
     return (
         <>
-            <Grid container direction={'row'} sx={{ height: '75vh' }}>
-                <Grid xs={12} direction={'row'} sx={{ alignItems: 'center' }}>
-                    <Typography sx={{ textAlign: 'center', bgcolor: 'red', height: '100%', alignItems: 'center' }}>
+            <Grid container alignItems={'center'} sx={{ height: '90vh', bgcolor:'#ffdede' }}>
+                <Grid xs={12}>
+                    <Typography variant='h2' className='animate-charcter'
+                    sx={{ textAlign: 'center', width:'100%', height:'100%', fontWeight:'700' }}>
                         Çok Yakında
                     </Typography>
                 </Grid>
