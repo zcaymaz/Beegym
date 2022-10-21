@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Link, Button, IconButton, Menu, MenuItem, Divider } from '@mui/material'
+import { Typography, Grid, Link, Button, IconButton, Menu, MenuItem } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import Logo from '../../images/Logo-png.png';
 
@@ -35,13 +35,6 @@ const Navbar = () => {
             <Link sx={{ textDecoration: 'none' }} href={'/packets'}>
               <Button className="navbarButton" variant="text">
                 <Typography className="navbarButton" variant="navbar">Paketler</Typography>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/changes'}>
-              <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">Değİşİmler</Typography>
               </Button>
             </Link>
           </Grid>
@@ -107,12 +100,6 @@ const Navbar = () => {
                   <Typography className="menuItemText">Paketler</Typography>
                 </Link>
               </MenuItem>
-              <MenuItem>
-                <Link className="menuItemLink" href={'/changes'}>
-                  <Typography className="menuItemText">Değİşİmler</Typography>
-                </Link>
-              </MenuItem>
-              <center><Divider className="NavbarDivider" /></center>
               {/* <MenuItem>
                 <Link className="menuItemLink" href={'/blog'}>
                   <Typography className="menuItemText">Blog</Typography>

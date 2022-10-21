@@ -13,7 +13,8 @@
 }
 .packetsCard {
     max-width: 400px;
-    height: 700px;
+    min-width: 250px;
+    height: 730px;
     background-color: #1D1D1D;
     color: #DFDDDC;
     border-radius: 13px;

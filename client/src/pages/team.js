@@ -1,20 +1,13 @@
 import React from 'react';
-import {
-    Typography,
-    Box,
-    Grid
-} from '@mui/material';
+import { Grid } from '@mui/material';
 import Team from '../components/common/TeamPageCard';
+import PageHeader from '../components/common/PageHeader';
 
 const team = () => {
     return (
         <>
             <Grid container direction={'column'}>
-                <Box sx={{ height: { xs: '100px', md: '150px' } }} className='packetsNav'>
-                    <Typography className='packetsNavText' sx={{ lineHeight: { xs: '100px', md: '150px' }, fontSize: { xs: '40px', md: '50px' } }}>
-                        EKİBİMİZ
-                    </Typography>
-                </Box>
+                <PageHeader text="EKİBİMİZ" />
                 <Grid>
                     <Team
                         name="enes"

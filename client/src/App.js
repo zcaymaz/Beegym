@@ -15,8 +15,8 @@ const loading = (
 const Home = React.lazy(() => import('./pages/home'))
 // const Blog = React.lazy(() => import('./pages/blog'))
 const Team = React.lazy(() => import('./pages/team'))
+const Test = React.lazy(() => import('./pages/test'))
 const Packets = React.lazy(() => import('./pages/packets'))
-const Changes = React.lazy(() => import('./pages/changes'))
 const Market = React.lazy(() => import('./pages/market'))
 
 class App extends Component {
@@ -30,8 +30,8 @@ class App extends Component {
             <Route exact path="*" name="Home Page" element={<Home />} />
             {/* <Route exact path="blog" name="Blog Page" element={<Blog />} /> */}
             <Route exact path="team" name="Team Page" element={<Team />} />
+            <Route exact path="test" name="Test Page" element={<Test />} />
             <Route exact path="packets" name="Paketler" element={<Packets />} />
-            <Route exact path="changes" name="Değişim" element={<Changes />} />
             <Route exact path="market" name="Market" element={<Market />} />
           </Routes>
         </Suspense>
